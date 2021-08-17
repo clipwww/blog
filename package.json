@@ -1,0 +1,34 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "just for fun",
+  "scripts": {
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
+  },
+  "keywords": [
+    "vuepress"
+  ],
+  "authors": {
+    "name": "clipwww",
+    "email": "clipwww@gmail.com"
+  },
+  "repository": "https://github.com/clipwww/blog",
+  "license": "ISC",
+  "devDependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "@vue/component-compiler-utils": "^3.2.2",
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "@vuepress/plugin-search": "^1.8.2",
+    "@vuepress/shared-utils": "^1.8.2",
+    "@vuepress/theme-blog": "^2.3.3",
+    "markdown-it-task-lists": "^2.1.1",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-reading-progress": "^1.0.10"
+  },
+  "dependencies": {}
+}
