@@ -1,20 +1,29 @@
 const path = require('path');
 
+console.log('[NODE_ENV]', process.env.NODE_ENV)
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config()
+}
+
 module.exports = {
   base: '/blog/',
   lang: 'zh-Hant-TW',
-  title: '雜七雜八 - David, Jian',
+  title: '雜七雜八 - David Jian',
   description: 'なんですか、これ？',
   repo: 'https://github.com/clipwww',
-  // head: [
-  //   ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }]
-  // ],
+  head: [
+    ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }]
+  ],
 
   theme: '@vuepress/theme-blog',
   themeConfig: {
     dateFormat: 'YYYY/MM/DD',
     logo: 'https://vuejs.org/images/logo.png',
     nav: [
+      {
+        text: 'About',
+        link: '/about/'
+      },
       {
         text: 'Blog',
         link: '/'
@@ -24,9 +33,9 @@ module.exports = {
         link: '/tag/'
       },
       {
-        text: 'About',
-        link: '/about/'
-      }
+        text: 'Link',
+        link: '/link/'
+      },
     ],
     footer: {
       contact: [
@@ -38,10 +47,6 @@ module.exports = {
           type: 'linkedin',
           link: 'https://www.linkedin.com/in/davidjian/',
         },
-        // {
-        //   type: 'web',
-        //   link: 'https://www.cakeresume.com/me/er-ting-jian',
-        // },
         {
           type: 'mail',
           link: 'mailto:clipwww@gmail.com',
@@ -62,14 +67,17 @@ module.exports = {
       service: 'vssue',
       owner: 'clipwww',
       repo: 'blog',
-      clientId: '6770b5e770cb48e399e7',
+      clientId: process.env.VSSUE_CLIENT_ID,
       clientSecret: process.env.VSSUE_CLIENT_SECRET,
+      locale: 'en',
+      perPage: 20,
     },
     sitemap: {
       hostname: 'https://clipwww.github.io/blog/',
     },
     smoothScroll: true,
     feed: {
+      json: true,
       canonical_base: 'https://clipwww.github.io/blog/'
     }
   },
@@ -83,6 +91,15 @@ module.exports = {
     ],
     // ['@vuepress/plugin-pwa'],
     // ['@vuepress/plugin-pwa-popup'],
+    ['@kawarimidoll/tailwind', {
+      theme: {
+        extend: {
+          colors: {
+            vue: '#3eaf7c'
+          },
+        },
+      },
+    }],
     ['reading-progress', {
       readingDir: ['_posts', 'about']
     }],
@@ -93,8 +110,9 @@ module.exports = {
     [
       '@vuepress/medium-zoom',
       {
-        selector: 'img.zoom-custom-imgs',
+        selector: '.vuepress-blog-theme-content :not(a) > img',
         options: {
+          background: 'rgba(0,0,0,0.7)',
           margin: 16
         }
       }
@@ -111,7 +129,7 @@ module.exports = {
   markdown: {
     lineNumbers: true,
     toc: {
-      includeLevel: [1, 2, 3]
+      includeLevel: [2, 3, 4, 5, 6]
     }
   },
   extendMarkdown: (md) => {

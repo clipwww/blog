@@ -16,6 +16,7 @@
   "repository": "https://github.com/clipwww/blog",
   "license": "ISC",
   "devDependencies": {
+    "@kawarimidoll/vuepress-plugin-tailwind": "^2.0.0",
     "@vssue/api-github-v3": "^1.4.7",
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "@vue/component-compiler-utils": "^3.2.2",
@@ -27,8 +28,11 @@
     "@vuepress/shared-utils": "^1.8.2",
     "@vuepress/theme-blog": "^2.3.3",
     "markdown-it-task-lists": "^2.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
     "vuepress": "^1.8.2",
     "vuepress-plugin-reading-progress": "^1.0.10"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
 }

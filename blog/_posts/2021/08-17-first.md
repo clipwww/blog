@@ -1,0 +1,103 @@
+---
+title: 第一篇文章
+summary: 這是第一篇，毫無意義的嘗試語法而已。
+date: 2021-08-17
+tags: 
+  - JavaScript
+  - Vue
+  - Markdown
+  - VuePress
+author: 我
+location: 台北, 台灣
+---
+
+這是第一篇，毫無意義的嘗試語法而已。
+
+## H2 :tada:
+### H3
+#### H4
+##### H5
+###### H6
+
+
+<div>{{ $service }}</div>
+<div>{{ $frontmatterKey }}</div>
+<div>{{ $page.lastUpdated }}</div>
+
+
+<!-- 这是默认主题内置的 `<Badge />` 组件 <Badge text="演示" /> -->
+
+一加一等于： {{ 1 + 1 }}
+
+<span v-for="i in 3"> span: {{ i }} </span>
+
+<img class="zoom-custom-imgs" :src="$withBase('/images/pic.png')" alt="pic" width="50" />
+
+![An image](/images/pic.png)
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+
+
+```ts{1,6-8}
+import type { UserConfig } from '@vuepress/cli'
+
+export const config: UserConfig = {
+  title: '你好， VuePress',
+
+  themeConfig: {
+    logo: 'https://vuejs.org/images/logo.png',
+  },
+}
+```
+
+```ts
+// 行号默认是启用的
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
+
+```ts:no-line-numbers
+// 行号被禁用
+const line2 = 'This is line 2'
+const line3 = 'This is line 3'
+```
+
+```md
+<!-- 默认情况下，这里会被保持原样 -->
+1 + 2 + 3 = {{ 1 + 2 + 3 }}
+```
+
+```md:no-v-pre
+<!-- 这里会被 Vue 编译 -->
+1 + 2 + 3 = {{ 1 + 2 + 3 }}
+```
+
+```js:no-v-pre
+// 由于 JS 代码高亮，这里不会被正确编译
+const onePlusTwoPlusThree = {{ 1 + 2 + 3 }}
+```
+
+<!-- <div>{{ $site }}</div>
+<div>{{ $page }}</div>
+<div>{{ $frontmatter }}</div> -->
+[[toc]]
+
+{{ a / b }}
+
+<script>
+export default {
+  data() {
+    return {
+      a: 1,
+      b: 100,
+    }
+  }
+}
+
+</script>

@@ -4,6 +4,9 @@
  *
  * ref：https://v1.vuepress.vuejs.org/config/#index-styl
  */
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .home .hero img
   max-width 550px!important;
@@ -14,3 +17,37 @@
 
 .header-wrapper .title
   text-transform: none;
+
+.vuepress-blog-theme-content
+  background-color #fff !important;
+
+.go-to-top
+  background-color #fff
+  height: 2rem;
+  border-radius: 5px;
+  padding: 5px;
+  display: block;
+  opacity .9;
+  box-shadow: 1px 1px 3px rgba(0,0,0, .3);
+  &:hover 
+    opacity 1
+
+.blog-tag
+  background-color #fff;
+
+.vssue 
+  .vssue-new-comment .vssue-new-comment-input
+    background-color #fff;
+
+  .vssue-pagination 
+    display none !important;
+
+  .vssue-comments
+    margin-top 30px
+
+
+@media (max-width: 719px)
+  .vuepress-blog-theme-content
+    footer 
+      margin 0 -1.5rem;
+      border-radius 5px;
