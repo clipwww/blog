@@ -1,0 +1,17 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "雜七雜八 - David Jian",
+    "home_page_url": "https://clipwww.github.io/blog/",
+    "feed_url": "https://clipwww.github.io/blog/feed.json",
+    "description": "なんですか、これ？",
+    "items": [
+        {
+            "id": "https://clipwww.github.io/blog/2021/08/17/_08-17-first/",
+            "url": "https://clipwww.github.io/blog/2021/08/17/_08-17-first/",
+            "title": "第一篇文章",
+            "summary": "這是第一篇，毫無意義的嘗試語法而已。",
+            "image": "https://clipwww.github.io/blog/images/pic.png",
+            "date_modified": "2021-08-17T00:00:00.000Z"
+        }
+    ]
+}
