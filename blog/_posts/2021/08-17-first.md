@@ -29,11 +29,14 @@ location: 台北, 台灣
 
 一加一等于： {{ 1 + 1 }}
 
+- [ ] TODO
+- [x] YEE
+
 <span v-for="i in 3"> span: {{ i }} </span>
 
 <img class="zoom-custom-imgs" :src="$withBase('/images/pic.png')" alt="pic" width="50" />
 
-![An image](/images/pic.png)
+![An image](@/images/pic.png)
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|

@@ -22,7 +22,6 @@
     "@vue/component-compiler-utils": "^3.2.2",
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-google-analytics": "^1.8.2",
-    "@vuepress/plugin-medium-zoom": "^1.8.2",
     "@vuepress/plugin-nprogress": "^1.8.2",
     "@vuepress/plugin-search": "^1.8.2",
     "@vuepress/shared-utils": "^1.8.2",
@@ -30,6 +29,7 @@
     "markdown-it-task-lists": "^2.1.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
     "vuepress": "^1.8.2",
+    "vuepress-plugin-medium-zoom": "^1.1.9",
     "vuepress-plugin-reading-progress": "^1.0.10"
   },
   "dependencies": {

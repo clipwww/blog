@@ -101,14 +101,14 @@ module.exports = {
       },
     }],
     ['reading-progress', {
-      readingDir: ['_posts', 'about']
+      readingDir: ['_posts', 'about', 'link']
     }],
     ['@vuepress/nprogress'],
     ['@vuepress/last-updated'],
     ['@vuepress/back-to-top'],
     ['@vuepress/search'],
     [
-      '@vuepress/medium-zoom',
+      'vuepress-plugin-medium-zoom',
       {
         selector: '.vuepress-blog-theme-content :not(a) > img',
         options: {
@@ -134,6 +134,6 @@ module.exports = {
   },
   extendMarkdown: (md) => {
     md.set({ breaks: true, html: true, linkify: true });
-    md.use(require('markdown-it-task-lists'));
+    // md.use(require('markdown-it-task-lists'));
   },
 }
