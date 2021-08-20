@@ -19,10 +19,10 @@
   text-transform: none;
 
 .vuepress-blog-theme-content
-  background-color #fff !important;
+  // background-color var(--c-bg) !important;
 
 .go-to-top
-  background-color #fff
+  background-color var(--c-bg-lighter);
   height: 2rem;
   border-radius: 5px;
   padding: 5px;
@@ -32,12 +32,11 @@
   &:hover 
     opacity 1
 
-.blog-tag
-  background-color #fff;
 
 .vssue 
+  color: var(--c-text) !important
   .vssue-new-comment .vssue-new-comment-input
-    background-color #fff;
+    background-color var(--c-bg);
 
   .vssue-pagination 
     display none !important;
@@ -46,7 +45,7 @@
     margin-top 30px
 
 
-@media (max-width: 719px)
+@media (max-width: $MQMobile)
   .vuepress-blog-theme-content
     footer 
       margin 0 -1.5rem;

@@ -1,4 +1,5 @@
   <div class="text-center">
+    <div><h2>About</h2></div>
     <div class="">
       <img class="w-32 rounded-full" :src="$withBase('/images/pic.png')"  alt="我" />
     </div>
@@ -14,6 +15,10 @@
       <a class="text-lg mx-3 no-underline" href="https://www.cakeresume.com/me/er-ting-jian" target="_blank">CakeResume<OutboundLink /></a>
       <a class="text-lg mx-3 no-underline" href="https://www.linkedin.com/in/davidjian/" target="_blank">LinkedIn<OutboundLink /></a>
     </div>
+    <div class="mt-4">
+      <a class="text-sm mx-3 no-underline" href="https://clipwww.github.io/log/#/movie" target="_blank">我的看電影紀錄<OutboundLink /></a>
+    </div>
   </div>
+
 
 

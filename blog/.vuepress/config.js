@@ -8,14 +8,14 @@ if (process.env.NODE_ENV === 'development') {
 module.exports = {
   base: '/blog/',
   lang: 'zh-Hant-TW',
-  title: '雜七雜八 - David Jian',
+  title: 'David\'s Blog',
   description: 'なんですか、これ？',
   repo: 'https://github.com/clipwww',
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }]
   ],
 
-  theme: '@vuepress/theme-blog',
+  // theme: '@vuepress/theme-blog',
   themeConfig: {
     dateFormat: 'YYYY/MM/DD',
     logo: 'https://vuejs.org/images/logo.png',
@@ -32,10 +32,10 @@ module.exports = {
         text: 'Tags',
         link: '/tag/'
       },
-      {
-        text: 'Link',
-        link: '/link/'
-      },
+      // {
+      //   text: 'Link',
+      //   link: '/link/'
+      // },
     ],
     footer: {
       contact: [
@@ -54,7 +54,7 @@ module.exports = {
       ],
       copyright: [
         {
-          text: 'clipwww©2021',
+          text: 'Copyright © 2021 David,Jian',
           link: '/',
         },
         {
@@ -92,6 +92,7 @@ module.exports = {
     // ['@vuepress/plugin-pwa'],
     // ['@vuepress/plugin-pwa-popup'],
     ['@kawarimidoll/tailwind', {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
