@@ -15,7 +15,7 @@
               <NavLink :link="item.link">{{ item.text }}</NavLink>
             </li>
             <li class="nav-item">
-              <ToggleTheme />
+               <ClientOnly><ToggleTheme /></ClientOnly>
             </li>
           </ul>
           <SearchBox />
