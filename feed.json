@@ -12,6 +12,14 @@
             "summary": "這是第一篇，毫無意義的嘗試語法而已。",
             "image": "https://clipwww.github.io/blog/@/images/pic.png",
             "date_modified": "2021-08-17T00:00:00.000Z"
+        },
+        {
+            "id": "https://clipwww.github.io/blog/2021/08/23/covid19-medigen-vaccine/",
+            "url": "https://clipwww.github.io/blog/2021/08/23/covid19-medigen-vaccine/",
+            "title": "接種高端疫苗",
+            "summary": "紀錄一下接種高端疫苗這件事，注射高端人生高端(?)",
+            "image": "https://imgur.com/gKak6ti.jpg",
+            "date_modified": "2021-08-23T00:00:00.000Z"
         }
     ]
 }
