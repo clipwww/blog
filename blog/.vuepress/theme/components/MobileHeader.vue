@@ -73,7 +73,7 @@ export default {
 
     .mobile-home-link
       text-decoration none
-      text-transform uppercase
+      // text-transform uppercase
       font-family PT Serif, Serif
       color var(--c-text)
       font-weight bold
