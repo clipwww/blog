@@ -20,6 +20,14 @@
             "summary": "紀錄一下接種高端疫苗這件事，注射高端人生高端(?)",
             "image": "https://imgur.com/gKak6ti.jpg",
             "date_modified": "2021-08-23T00:00:00.000Z"
+        },
+        {
+            "id": "https://clipwww.github.io/blog/2021/08/25/google-sheets/",
+            "url": "https://clipwww.github.io/blog/2021/08/25/google-sheets/",
+            "title": "用 Google 試算表當簡易資料庫",
+            "summary": "紀錄一下用 Google 試算表當成資料庫並且變成API來使用這件事",
+            "image": "https://i.imgur.com/E6yOfKa.png",
+            "date_modified": "2021-08-25T00:00:00.000Z"
         }
     ]
 }
