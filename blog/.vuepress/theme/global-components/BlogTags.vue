@@ -5,17 +5,37 @@
 
     <div class="mt-10" v-for="year in arrayPostByYear" :key="year.id">
       <h2 class="m-0">{{ year.id }}</h2>
-      <div class="pl-8">
-        <div class="my-5 border-dashed border-b border-t-0 border-l-0 border-r-0 border-gray-300 pb-5" v-for="post in year.posts" :key="post.key">
-          <div class="text-xs text-gray-400">
-            {{ resolvePostTags(post.frontmatter.tags).join(", ") }}
+      <div class="pl-6">
+        <div
+          class="
+            my-5
+            border-dashed
+            border-b
+            border-t-0
+            border-l-0
+            border-r-0
+            flex
+            items-center
+            border-gray-300
+            pb-5
+          "
+          v-for="post in year.posts"
+          :key="post.key"
+        >
+          <div class="flex flex-col items-center justify-center font-bold mr-4">
+            <span class="text-xl">{{ formatMonth(post.frontmatter.date) }}</span>
+            <span class="text-4xl">{{ formatDay(post.frontmatter.date) }}</span>
           </div>
-          <NavLink class="block my-1 text-xl no-underline sm:text-2xl" :link="post.path">{{
-            post.title
-          }}</NavLink>
-          <div class="text-xs my-1">{{ post.frontmatter.summary }}</div>
-          <div class="text-xs text-gray-400">
-            <span>{{ formatDate(post.frontmatter.date) }}</span>
+          <div>
+            <div class="text-xs text-gray-400">
+              {{ resolvePostTags(post.frontmatter.tags).join(", ") }}
+            </div>
+            <NavLink
+              class="block my-1 text-xl no-underline sm:text-2xl"
+              :link="post.path"
+              >{{ post.title }}</NavLink
+            >
+            <div class="text-xs my-1">{{ post.frontmatter.summary }}</div>
           </div>
         </div>
       </div>
@@ -51,8 +71,11 @@ export default {
     },
   },
   methods: {
-    formatDate(date) {
-      return dayjs(date).format("MM/DD HH:mm");
+    formatMonth(date) {
+      return dayjs(date).format("MMM");
+    },
+    formatDay(date) {
+      return dayjs(date).format("DD");
     },
     resolvePostTags(tags) {
       if (!tags || Array.isArray(tags)) return tags;
