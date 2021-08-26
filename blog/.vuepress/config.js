@@ -1,7 +1,8 @@
 const path = require('path');
 
+const isDev = process.env.NODE_ENV === 'development';
 console.log('[NODE_ENV]', process.env.NODE_ENV)
-if (process.env.NODE_ENV === 'development') {
+if (isDev) {
   require('dotenv').config()
 }
 
@@ -58,8 +59,8 @@ module.exports = {
           link: '/',
         },
         {
-          text: '本部落格依照創用CC「姓名標示-非商業性-禁止改作 3.0 台灣」授權',
-          link: 'https://creativecommons.org/licenses/by-nc-nd/3.0/tw/',
+          text: 'Powered by VuePress',
+          link: 'https://v1.vuepress.vuejs.org/',
         },
       ],
     },
@@ -86,7 +87,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        id: 'UA-93335284-1',
+        ga: 'UA-93335284-1',
       },
     ],
     // ['@vuepress/plugin-pwa'],
@@ -102,7 +103,7 @@ module.exports = {
       },
     }],
     ['reading-progress', {
-      readingDir: ['_posts', 'about', 'link']
+      readingDir: ['_posts', 'about', 'link', 'tag']
     }],
     ['@vuepress/nprogress'],
     ['@vuepress/last-updated'],
@@ -118,9 +119,20 @@ module.exports = {
         }
       }
     ],
+    ['social-share', {
+      networks: ['line', 'facebook', 'twitter', 'email'],
+      email: 'clipwww@gmail.com',
+      twitterUser: 'clipwwww',
+      fallbackImage: 'https://vuepress.vuejs.org/hero.png',
+      autoQuote: true,
+      isPlain: false,
+    },]
   ],
 
   configureWebpack: {
+    output: isDev ? {} : {
+      publicPath: 'https://cdn.jsdelivr.net/gh/clipwww/blog@gh-pages/'
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '../assets'),

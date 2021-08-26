@@ -17,6 +17,9 @@
         />
       </header>
       <Content itemprop="articleBody" />
+      <div class="text-right text-xs text-gray-400 my-2">
+        <div><span class="font-bold text-gray-600 dark:text-gray-300 mr-2">Last Updated:</span>{{ $page.lastUpdated }}</div>
+      </div>
       <footer>
         <Newsletter v-if="$service.email.enabled" />
         <hr />
