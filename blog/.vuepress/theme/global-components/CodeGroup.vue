@@ -136,4 +136,6 @@ h2, h3, h4, h5, h6
     &__nav
       border-top-left-radius 4px
       border-top-right-radius 4px
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
 </style>

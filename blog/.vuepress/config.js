@@ -105,7 +105,15 @@ module.exports = {
       readingDir: ['_posts', 'about', 'link', 'tag']
     }],
     ['@vuepress/nprogress'],
-    ['@vuepress/last-updated'],
+    ['@vuepress/last-updated', {
+      transformer(timestamp, lang){
+        // Don't forget to install moment yourself
+        require('dayjs/locale/zh-tw')
+        const dayjs = require('dayjs')
+        dayjs.locale('zh-tw')
+        return dayjs(timestamp).format('YYYY/MM/DD HH:mm:ss')
+      }
+    }],
     ['@vuepress/back-to-top'],
     ['@vuepress/search'],
     [

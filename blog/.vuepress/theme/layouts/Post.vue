@@ -19,12 +19,13 @@
 
       <Content itemprop="articleBody" />
 
-      <div class="text-center text-xs text-gray-400 my-2">
+      <div class="text-center text-xs text-gray-600 dark:text-gray-300 my-6">
         <social-share />
         <div>
-          <span class="font-bold text-gray-600 dark:text-gray-300 mr-2"
-            >Last Updated:</span
-          >{{ $page.lastUpdated }}
+          <span class="font-bold mr-1">
+            Last Updated:
+          </span>
+          <span>{{ $page.lastUpdated }}</span>
         </div>
       </div>
       <footer>
@@ -49,6 +50,7 @@ export default {
     Comment,
     Newsletter: () => import("@theme/components/Newsletter.vue"),
   },
+
   watch: {
     $route() {
       this.$nextTick(() => {
