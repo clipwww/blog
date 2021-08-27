@@ -27,27 +27,27 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2021/08/17/first/index.html",
-    "revision": "3a3ae6a884fdc4f4a7caad93e8696855"
+    "revision": "077acc83f132d2b341f82685eb90ed18"
   },
   {
     "url": "2021/08/23/covid19-medigen-vaccine/index.html",
-    "revision": "8d1e506378a6bdc8cf34134644e0ec29"
+    "revision": "7faafc1dde183d3ba588811510e881e0"
   },
   {
     "url": "2021/08/25/google-sheets/index.html",
-    "revision": "a81ca0f13f37a6b49b6a7928e8a24870"
+    "revision": "155f3daddf1a8c5e9b9ca0a95a747e01"
   },
   {
     "url": "404.html",
-    "revision": "220aad348360cc591ffa4738b82b6c96"
+    "revision": "8920a222c14e8cf2e0027ddd7a7a9a86"
   },
   {
     "url": "about/index.html",
-    "revision": "dd12c8636c15bd03e16daf2af575b336"
+    "revision": "72715a5ebe6c122ce6923cfc8ee85650"
   },
   {
-    "url": "assets/css/0.styles.ba8ed6ca.css",
-    "revision": "a54f8ace0fa74169d79d8d9a73728109"
+    "url": "assets/css/0.styles.767370cb.css",
+    "revision": "ad813b4c76f61aacc842daa2b942a396"
   },
   {
     "url": "assets/fonts/EJRVQgYoZZY2vCFuvAFbzr-_dSb_nco.9738e026.woff2",
@@ -110,8 +110,8 @@ self.__precacheManifest = [
     "revision": "30107cd716a9c101be29d38a4a912393"
   },
   {
-    "url": "assets/js/3.f489ef16.js",
-    "revision": "57ff0a8926d0753e1748972924b2cf80"
+    "url": "assets/js/3.e1b1d662.js",
+    "revision": "d8ef1dde58a29018314a44ff0042fe35"
   },
   {
     "url": "assets/js/4.e185a939.js",
@@ -126,8 +126,8 @@ self.__precacheManifest = [
     "revision": "a0188e700e4b04c0ab938fc64f8009fa"
   },
   {
-    "url": "assets/js/7.fb222bf3.js",
-    "revision": "c20b589a8c17f760844c369448925435"
+    "url": "assets/js/7.e1ac5f8f.js",
+    "revision": "e5a2ee05e3c5c6005d6eb5f431ab2bbd"
   },
   {
     "url": "assets/js/8.7b8a6626.js",
@@ -138,8 +138,8 @@ self.__precacheManifest = [
     "revision": "133ea99d26ed91c6f86f1d8ed0348eb7"
   },
   {
-    "url": "assets/js/app.169d156f.js",
-    "revision": "d8eaab17b3e08734a28ef955208bab1f"
+    "url": "assets/js/app.01e8e081.js",
+    "revision": "3582e0db613266d80276cf473f2ac18b"
   },
   {
     "url": "assets/js/vuejs-paginate.cd2053e3.js",
@@ -155,51 +155,51 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "4725472d408e83f9aaef858e4e39133d"
+    "revision": "7ce7f0dfcbd2ff3ccb9cb4d63225f8fa"
   },
   {
     "url": "link/index.html",
-    "revision": "88413d58d2ecaec136aebb9099602f92"
+    "revision": "5811d37c12d334e60d7ea7c98c02eb67"
   },
   {
     "url": "tag/COVID-19/index.html",
-    "revision": "7e0a9671eb19c1edba8879dbf4ed0e0e"
+    "revision": "8abd7243e03687f62b239ea3b3220822"
   },
   {
     "url": "tag/Google Sheets/index.html",
-    "revision": "3de295d2d32e1e42896839d0f3e800ac"
+    "revision": "f76b3b2a89d9d342892b7a6638545241"
   },
   {
     "url": "tag/index.html",
-    "revision": "b76cf8a5c11902492dec4262d9a11cd7"
+    "revision": "a471924894fb735f7d2d311796dda7bb"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "3c7e58ca57bfa207125109e419e3d86e"
+    "revision": "10ce0cfac5a9c773f82d7218d81f7615"
   },
   {
     "url": "tag/JSON/index.html",
-    "revision": "f215e254825e7da50033e7d975119f2e"
+    "revision": "492a8ef4cec80d4a6126663eb4e25210"
   },
   {
     "url": "tag/Markdown/index.html",
-    "revision": "8699211caa51b87af35828ad84d86ecb"
+    "revision": "34fe45cc730ca6893c88e1485ac804f7"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "a2438f0e4132294c22e5ba7c010a5401"
+    "revision": "c44e11efb49b25d0f91a90abe66433f2"
   },
   {
     "url": "tag/VuePress/index.html",
-    "revision": "3236d897452893f1090c0c5e9f291b50"
+    "revision": "4b9e831020650de0f31a0db2c8aaabc4"
   },
   {
     "url": "tag/雜記/index.html",
-    "revision": "b5474049a506423c9a9327516d066f02"
+    "revision": "5305995ec81a34ebd9bcc66ff9c2b063"
   },
   {
     "url": "tag/高端疫苗/index.html",
-    "revision": "2f6c1d03ceb463dc16fa68cfe796e4e5"
+    "revision": "311016d2baf125cfc75f945aaa263c78"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
