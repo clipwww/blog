@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Fri, 27 Aug 2021 05:00:21 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Aug 2021 10:25:48 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -32,6 +32,15 @@
             <pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[紀錄一下用 Google 試算表當成資料庫並且變成API來使用這件事]]></description>
             <enclosure url="https://i.imgur.com/E6yOfKa.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[賽馬娘 獅子杯]]></title>
+            <link>https://clipwww.github.io/blog/2021/08/27/umamusume-leo-race/</link>
+            <guid>https://clipwww.github.io/blog/2021/08/27/umamusume-leo-race/</guid>
+            <pubDate>Fri, 27 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[阿肥務實，阿肥有料]]></description>
+            <enclosure url="https://i.imgur.com/nHtRWwj.png">
             </enclosure>
         </item>
     </channel>
