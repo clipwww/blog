@@ -6,6 +6,11 @@
   --c-text-light: #3a5169;
   --c-text-lighter: #4e6e8e;
   --c-text-lightest: #6a8bad;
+  --c-vue: #3eaf7c;
+
+  --code-color $codeColor
+  --inline-code-text $inlineCodeText
+  --inline-code-bg $inlineCodeBg
 }
 
 html.dark {
@@ -16,6 +21,10 @@ html.dark {
   --c-text-light: #96a7b7;
   --c-text-lighter: #8b9eb0;
   --c-text-lightest: #8094a8;
+
+  --code-color $codeColorDark
+  --inline-code-text $inlineCodeTextDark
+  --inline-code-bg $inlineCodeBgDark
 }
 
 // colors
@@ -25,7 +34,15 @@ $textColor = #2c3e50;
 $darkTextColor = #000
 $borderColor = #eaecef
 $darkBorderColor = $darkTextColor
-$codeBgColor = $darkTextColor
+
+$codeBgColor = #2d2d2d
+$codeHighlightLineColor = rgba(0, 0, 0, 66%)
+$codeColor = rgba(27, 31, 35, 0.05)
+$codeColorDark = rgba(27, 35, 47, .3)
+$inlineCodeText = #c52950
+$inlineCodeTextDark = #96c2eb
+$inlineCodeBg = #f9f2f4
+$inlineCodeBgDark = rgba(76, 86, 128, 0.4)
 
 $bgColor = var(--c-bg);
 $headerBgColor = var(--c-bg);

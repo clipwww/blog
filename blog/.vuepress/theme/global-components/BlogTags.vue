@@ -5,7 +5,7 @@
 
     <div class="mt-10" v-for="year in arrayPostByYear" :key="year.id">
       <h2 class="m-0">{{ year.id }}</h2>
-      <div class="pl-6">
+      <div class="pl-4">
         <div
           class="
             my-5

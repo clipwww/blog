@@ -19,6 +19,7 @@ module.exports = {
   // theme: '@vuepress/theme-blog',
   themeConfig: {
     dateFormat: 'YYYY/MM/DD',
+    pwa: true,
     logo: 'https://vuejs.org/images/logo.png',
     nav: [
       {
@@ -90,8 +91,6 @@ module.exports = {
         ga: 'UA-93335284-1',
       },
     ],
-    // ['@vuepress/plugin-pwa'],
-    // ['@vuepress/plugin-pwa-popup'],
     ['@kawarimidoll/tailwind', {
       darkMode: 'class',
       theme: {
@@ -125,7 +124,8 @@ module.exports = {
       twitterUser: 'clipwwww',
       fallbackImage: 'https://vuepress.vuejs.org/hero.png',
       autoQuote: true,
-      isPlain: false,
+      isPlain: true,
+      noGlobalSocialShare: true,
     },]
   ],
 
@@ -140,7 +140,7 @@ module.exports = {
     },
   },
   markdown: {
-    lineNumbers: true,
+    lineNumbers: false,
     toc: {
       includeLevel: [2, 3, 4, 5, 6]
     }

@@ -9,7 +9,7 @@ html, body
   margin 0
 
 body
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-family 'Noto Sans TC' -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-size 16px
@@ -73,7 +73,6 @@ strong
 h1, h2, h3, h4, h5, h6
   font-weight 600
   line-height 1.25
-  font-family PT Serif, Serif
 
   {$contentClass}:not(.custom) > &
     margin-top 'calc(0.5rem - %s)' % ($headerHeight)
@@ -126,6 +125,7 @@ tr
 
   &:nth-child(2n)
     background-color #f6f8fa
+    color #2c3e50
 
 th, td
   border 1px solid #dfe2e5

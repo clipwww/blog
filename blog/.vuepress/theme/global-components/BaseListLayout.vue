@@ -24,7 +24,7 @@
           />
           <!-- eslint-enable vue/no-v-html -->
         </client-only>
-        <p v-else class="ui-post-summary text-gray-500 dark:text-gray-300" itemprop="description">
+        <p v-else class="ui-post-summary my-2 text-gray-500 dark:text-gray-300" itemprop="description">
           {{ page.frontmatter.summary || page.summary }}
         </p>
 
@@ -155,7 +155,6 @@ export default {
     margin-bottom 0px
 
 .ui-post-title
-  font-family PT Serif, Serif
   font-size 28px
   border-bottom 0
 
@@ -170,7 +169,7 @@ export default {
 
 .ui-post-summary
   font-size 14px
-  font-weight 200
+  font-weight 500
 
 .ui-post-meta
   display inline-flex
@@ -194,17 +193,17 @@ export default {
       margin-bottom 10px
 
 .ui-post-author
-  font-weight 400
+  font-weight 500
 
 .ui-post-date
-  font-weight 200
+  font-weight 500
 
 .ui-post-tag
-  font-weight 200
+  font-weight 500
 
   a
     color inherit
-    font-weight 200
+  
     text-decoration none
     margin-right 5px
 
