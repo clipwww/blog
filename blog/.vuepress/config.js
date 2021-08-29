@@ -100,6 +100,9 @@ module.exports = {
           },
         },
       },
+      plugins: [
+        require('@tailwindcss/aspect-ratio')
+      ]
     }],
     ['reading-progress', {
       readingDir: ['_posts', 'about', 'link', 'tag']

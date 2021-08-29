@@ -35,7 +35,7 @@
               :link="post.path"
               >{{ post.title }}</NavLink
             >
-            <div class="text-xs my-1">{{ post.frontmatter.summary }}</div>
+            <div class="text-xs">{{ post.frontmatter.summary }}</div>
           </div>
         </div>
       </div>

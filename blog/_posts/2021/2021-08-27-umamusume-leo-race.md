@@ -1,6 +1,6 @@
 ---
-title: 賽馬娘 獅子杯
-summary: 阿肥務實，阿肥有料
+title: 賽馬娘 獅子盃
+summary: 特別肥，我的超人
 date: 2021-08-27
 tags:
   - 雜記
@@ -23,7 +23,7 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
   <img class="w-1/3" src="https://imgur.com/FYpcVIk.png" alt="內洽"/>
 </div>
 
-## 預賽
+## 無限制組預賽
 
 <table class="w-full table-auto text-right">
   <thead>
@@ -54,7 +54,19 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
 
 帶咒術馬最想看到的就是[像這樣](https://i.imgur.com/RxMsJfs.mp4)讓人耐切散步🤣
 
-## 決賽
+## A組決賽
+
+<img class="my-2 w-1/3" src="https://i.imgur.com/dBNKwgz.jpg" alt="A決"/>
+
+配對的大勝利 + 技能都開的即時
+- 不會釣魚的單逃S波旁
+- 僅有一隻中距離S的白仁(2着)
+- 特別肥雙金回都有開，而且只有我帶咒術馬完全不擔心肥耐切
+- 紅焰+固有+全身全靈一氣呵成成功突破包圍沒撞牆
+
+<div class="aspect-w-16 aspect-h-9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/i_shZaQ0aFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <script>
 export default {
