@@ -27,31 +27,31 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "2021/08/17/first/index.html",
-    "revision": "60b31df45012f91189a702f0db8ffad7"
+    "revision": "7263a770ffc2341b496a166ead446b26"
   },
   {
     "url": "2021/08/23/covid19-medigen-vaccine/index.html",
-    "revision": "e1dbb93dcdab81c009c9f52eecded5ab"
+    "revision": "40b3830fb56bd3fa3ee56101bebe3e6a"
   },
   {
     "url": "2021/08/25/google-sheets/index.html",
-    "revision": "87b88cc30e4c5075b49c31fb0318d863"
+    "revision": "c3fd49de46bdd0b9b680f8978fea758a"
   },
   {
     "url": "2021/08/27/umamusume-leo-race/index.html",
-    "revision": "9b46f8edfdf539e228522ebc4660b847"
+    "revision": "7adad56cd900fba0ad9566b239de3edf"
   },
   {
     "url": "404.html",
-    "revision": "40414c2e8c66e630e4a05426e98786f9"
+    "revision": "472d379b728ed866b8f76fdd12705db1"
   },
   {
     "url": "about/index.html",
-    "revision": "7b04a7addd14719df1a2946aca688645"
+    "revision": "563afc1a8bdf10f9e31a73609b2d210d"
   },
   {
-    "url": "assets/css/0.styles.1b38d01d.css",
-    "revision": "bbad92098eb8da7eb175347ade1b1a17"
+    "url": "assets/css/0.styles.68a69206.css",
+    "revision": "70f4259ed30fa587716f01e68fe9d791"
   },
   {
     "url": "assets/fonts/EJRVQgYoZZY2vCFuvAFbzr-_dSb_nco.9738e026.woff2",
@@ -70,88 +70,92 @@ self.__precacheManifest = [
     "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/js/10.fc46ffa9.js",
-    "revision": "7d141acaaef9c0fa611f6fae00255cf9"
+    "url": "assets/js/10.0a9749ea.js",
+    "revision": "db5cf90375e2de384902e15fb9a58778"
   },
   {
-    "url": "assets/js/11.b1a0a669.js",
-    "revision": "81c002a1a47f8996922e2ad09502fdad"
+    "url": "assets/js/11.76726dab.js",
+    "revision": "723fd7b3eded5ef86fce2d5f438d5488"
   },
   {
-    "url": "assets/js/12.1af66d1b.js",
-    "revision": "5618dd4d19b1d57f3fc69eb8d4f5d5ce"
+    "url": "assets/js/12.cdc3ed62.js",
+    "revision": "0fc42b807556f9da300e5869e4b046ee"
   },
   {
-    "url": "assets/js/13.3c42a2eb.js",
-    "revision": "d3e1049b9a8ec0948f48c4ab91f607a8"
+    "url": "assets/js/13.b6eec3cb.js",
+    "revision": "abb5d40fc65f97b3adc842551279e049"
   },
   {
-    "url": "assets/js/14.8c63f540.js",
-    "revision": "6483368c0615c69be0a4461b67420fe1"
+    "url": "assets/js/14.04c69437.js",
+    "revision": "3df4c5e81394244b7d7123475a58bde4"
   },
   {
-    "url": "assets/js/15.acc1fec9.js",
-    "revision": "32e3571bd3c8c7106c011d8763b1133b"
+    "url": "assets/js/15.ce402a40.js",
+    "revision": "65642a8277e927749b560c6b38c0332b"
   },
   {
-    "url": "assets/js/16.0314b142.js",
-    "revision": "71d32ecced508eedae7e1e8399d9412b"
+    "url": "assets/js/16.ff263464.js",
+    "revision": "262e2b5c5e257c34eb5a416840a43c36"
   },
   {
-    "url": "assets/js/17.f6ff686e.js",
-    "revision": "4fda3edde13a17d3e223e12b642f79c9"
+    "url": "assets/js/17.768a9ef6.js",
+    "revision": "78e380b0b533033d3389542ba7d6a8ce"
   },
   {
-    "url": "assets/js/18.af13f513.js",
-    "revision": "8d7b86cc56f00d94537e3fc3ef507c61"
+    "url": "assets/js/18.1fb75b84.js",
+    "revision": "e019820e43c635765c32a82158077026"
   },
   {
-    "url": "assets/js/19.af824887.js",
-    "revision": "fcb70bdaf28f68ad1250f1e386cacea9"
+    "url": "assets/js/19.965994fe.js",
+    "revision": "6f03703d59f6631e7d1fa012b0c6a5ed"
   },
   {
-    "url": "assets/js/20.3955a82f.js",
-    "revision": "83e70ef9616051860a658550353b66c0"
+    "url": "assets/js/20.1826775b.js",
+    "revision": "b5ab8f0261c7b2ddaface380b1cae13c"
   },
   {
-    "url": "assets/js/21.c654202f.js",
-    "revision": "baf214fcc0a463e078f6ca46dbb67871"
+    "url": "assets/js/21.403a1130.js",
+    "revision": "b79bca6ff32bbf78c96e76a27f136200"
   },
   {
-    "url": "assets/js/3.e1b1d662.js",
-    "revision": "d8ef1dde58a29018314a44ff0042fe35"
+    "url": "assets/js/22.44723c73.js",
+    "revision": "6eb3899e66e96d42550041b669deaa77"
   },
   {
-    "url": "assets/js/4.1713a0d6.js",
-    "revision": "29328d9b9888534f13dec9f4ad90946a"
+    "url": "assets/js/3.bdc3eb1b.js",
+    "revision": "84aa6e22f8dbfd9733747d806713fb2a"
   },
   {
-    "url": "assets/js/5.f5eaa915.js",
-    "revision": "2e1f107c97bc1bec4575b3cf0976b41e"
+    "url": "assets/js/4.5ed8716e.js",
+    "revision": "7f0a756f5c1b50be78fe16608d5fb297"
   },
   {
-    "url": "assets/js/6.dd749bb8.js",
-    "revision": "a0188e700e4b04c0ab938fc64f8009fa"
+    "url": "assets/js/5.9dd992ca.js",
+    "revision": "e386530fff1259f70b19d2881e6f2f3a"
   },
   {
-    "url": "assets/js/7.5000f27b.js",
-    "revision": "532a6d5b583a386dd2995eca8c4a3dbe"
+    "url": "assets/js/6.944d0252.js",
+    "revision": "09fdd136dd9575fd60f4976b4681c162"
   },
   {
-    "url": "assets/js/8.1295d4b4.js",
-    "revision": "f448423d4411f1e6763f116a0cf15197"
+    "url": "assets/js/7.710db601.js",
+    "revision": "27d78ea96f5422d17df75077ce16e6ff"
   },
   {
-    "url": "assets/js/9.59aa795a.js",
-    "revision": "a426f665a68dba1b74673a3c1ac252a3"
+    "url": "assets/js/8.065c13e3.js",
+    "revision": "4a4223bbc9b38985a0fc5a2ade45b980"
   },
   {
-    "url": "assets/js/app.150d6828.js",
-    "revision": "d036e3df72310f82c6a3743477fd9bc7"
+    "url": "assets/js/9.53bab0d5.js",
+    "revision": "da805753eab65791ea77c64c611f1c96"
   },
   {
-    "url": "assets/js/vuejs-paginate.cd2053e3.js",
-    "revision": "16377c8ffb13c218f64857b00392b343"
+    "url": "assets/js/app.1e3779dd.js",
+    "revision": "310b484c787a6ec3a5756c3e8b37ed4c"
+  },
+  {
+    "url": "assets/js/vuejs-paginate.d1226f16.js",
+    "revision": "9696a47e634a642ee019d227aa799430"
   },
   {
     "url": "images/me.jpg",
@@ -163,59 +167,59 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "1ee56c2bad3a8f406274a1eea7af2b7d"
+    "revision": "b113c4bbb8737384036aa537277eb9ab"
   },
   {
     "url": "link/index.html",
-    "revision": "3f930d032f1eab6e83400c7e2c0ce80b"
+    "revision": "738c4c2c5dc9a59c23c133eb2ffbc63e"
   },
   {
     "url": "tag/COVID-19/index.html",
-    "revision": "8963bcea7ff94fac3cccc5612d54b5df"
+    "revision": "7c3845fc1e211b256ebde12e30041d90"
   },
   {
     "url": "tag/Google Sheets/index.html",
-    "revision": "9bfb07722a30c708ed9d3be4c76a55fe"
+    "revision": "df335a3f70f4bed6171e16ecca2f00ca"
   },
   {
     "url": "tag/index.html",
-    "revision": "dae6c5cea4b3c6d6c95ab5483c82ddff"
+    "revision": "18474631fdcac305cf8a3a113734a226"
   },
   {
     "url": "tag/JavaScript/index.html",
-    "revision": "1588bcadb13c1077caeb55e5edea3b80"
+    "revision": "cdfaa69f95c1480791f31211d980759e"
   },
   {
     "url": "tag/JSON/index.html",
-    "revision": "87b1557a14a4b09c84cc0e5c3fa5679e"
+    "revision": "a749f6406524b877b22ff6be83741903"
   },
   {
     "url": "tag/Markdown/index.html",
-    "revision": "9feb5197c4e6241b0790e281e4715aff"
+    "revision": "bc03f6ae7f2c944b7e76bb37ed4514f4"
   },
   {
     "url": "tag/Vue/index.html",
-    "revision": "ae5ef12f6238c5b5f17971686f3c30ca"
+    "revision": "322ffb653a85c52615f93ef9550d9151"
   },
   {
     "url": "tag/VuePress/index.html",
-    "revision": "97c7a5cc296a9c8bb8a16b53489c1989"
+    "revision": "d9fbe804ebdd83d222918f45d30cdb2b"
   },
   {
     "url": "tag/ウマ娘/index.html",
-    "revision": "03be32572bd3f0bce1e669c2d42b7de1"
+    "revision": "f005ebbe15e981f1f415515e0f7ce111"
   },
   {
     "url": "tag/遊戲/index.html",
-    "revision": "9ad2ef3ba997b176e98762e80fdfa6cc"
+    "revision": "7f8401813f3f6f8f51a3fb23ff4fcff3"
   },
   {
     "url": "tag/雜記/index.html",
-    "revision": "c0a9fc036bae44223a859c389353e1cc"
+    "revision": "f6db4cd47a030b98d6ad1a1d57b5711b"
   },
   {
     "url": "tag/高端疫苗/index.html",
-    "revision": "11b3777e6e02e17f8d037a4b6beeeaaf"
+    "revision": "03c26500987e4f20b640acff125f641e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
