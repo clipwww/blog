@@ -29,13 +29,13 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
   <thead>
     <tr>
       <th></th>
-      <th>1着</th>
-      <th>2着</th>
-      <th>3着</th>
-      <th>圈外</th>
-      <th>勝率</th>
-      <th>連對率</th>
-      <th>複勝率</th>
+      <th class="whitespace-nowrap">1着</th>
+      <th class="whitespace-nowrap">2着</th>
+      <th class="whitespace-nowrap">3着</th>
+      <th class="whitespace-nowrap">圈外</th>
+      <th class="whitespace-nowrap">勝率</th>
+      <th class="whitespace-nowrap">連對率</th>
+      <th class="whitespace-nowrap">複勝率</th>
     </tr>
   </thead>
   <tbody>
@@ -58,7 +58,7 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
 
 <img class="my-2 w-1/3" src="https://i.imgur.com/dBNKwgz.jpg" alt="A決"/>
 
-配對的大勝利 + 技能都開的即時
+配對的大勝利 + 技能都開的及時
 - 不會釣魚的單逃S波旁
 - 僅有一隻中距離S的白仁(2着)
 - 特別肥雙金回都有開，而且只有我帶咒術馬完全不擔心肥耐切

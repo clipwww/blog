@@ -32,6 +32,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
     "vuepress": "^1.8.2",
     "vuepress-plugin-medium-zoom": "^1.1.9",
+    "vuepress-plugin-minimal-analytics": "^0.1.4",
     "vuepress-plugin-reading-progress": "^1.0.10",
     "vuepress-plugin-social-share": "^1.0.0"
   },

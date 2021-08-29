@@ -85,12 +85,13 @@ module.exports = {
   },
 
   plugins: [
-    [
-      '@vuepress/google-analytics',
-      {
-        ga: 'UA-93335284-1',
-      },
-    ],
+    // [
+    //   '@vuepress/google-analytics',
+    //   {
+    //     ga: 'UA-93335284-1',
+    //   },
+    // ],
+    ['minimal-analytics', { ga: 'UA-93335284-1' }],
     ['@kawarimidoll/tailwind', {
       darkMode: 'class',
       theme: {
