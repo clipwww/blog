@@ -20,7 +20,7 @@ location: 台北, 台灣
 1. 檔案 > 發佈到網路
   要發布範圍跟類型就直接選`整份文件`、`網頁`就好了
   點發佈後就能夠獲得文件的公開連結
-  <img class="w-64 my-2" src="https://i.imgur.com/Pm03es5.png" />
+  <img class="w-64 my-2" src="https://i.imgur.com/Pm03es5.png"  data-action="zoom" />
   另外要點右上角的`共用`
   ![](https://i.imgur.com/E6yOfKa.png)
   調整為知道連結的使用者都可以查看
@@ -38,7 +38,7 @@ location: 台北, 台灣
     
       
     回傳的資料格式如下，長的比較特別，就要再另外自己整理了
-    <img class="w-64 my-2" src="https://i.imgur.com/joA9hCP.png" />
+    <img class="w-64 my-2" src="https://i.imgur.com/joA9hCP.png"  data-action="zoom" />
 
 ## Google Sheets API v4
 前陣子發現我的電影紀錄偶爾會拿不到資料

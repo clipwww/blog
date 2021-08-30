@@ -1,4 +1,8 @@
 const path = require('path');
+const dayjs = require('dayjs')
+require('dayjs/locale/zh-tw')
+
+dayjs.locale('zh-tw')
 
 const isDev = process.env.NODE_ENV === 'development';
 console.log('[NODE_ENV]', process.env.NODE_ENV)
@@ -19,7 +23,6 @@ module.exports = {
   // theme: '@vuepress/theme-blog',
   themeConfig: {
     dateFormat: 'YYYY/MM/DD',
-    pwa: true,
     logo: 'https://vuejs.org/images/logo.png',
     nav: [
       {
@@ -92,6 +95,16 @@ module.exports = {
     //   },
     // ],
     ['minimal-analytics', { ga: 'UA-93335284-1' }],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "發現了新的內容",
+          buttonText: "重新整理"
+        }
+      }
+    ],
     ['@kawarimidoll/tailwind', {
       darkMode: 'class',
       theme: {
@@ -111,25 +124,21 @@ module.exports = {
     ['@vuepress/nprogress'],
     ['@vuepress/last-updated', {
       transformer(timestamp, lang){
-        // Don't forget to install moment yourself
-        require('dayjs/locale/zh-tw')
-        const dayjs = require('dayjs')
-        dayjs.locale('zh-tw')
         return dayjs(timestamp).format('YYYY/MM/DD HH:mm:ss')
       }
     }],
     ['@vuepress/back-to-top'],
     ['@vuepress/search'],
-    [
-      'vuepress-plugin-medium-zoom',
-      {
-        selector: '.vuepress-blog-theme-content :not(a) > img',
-        options: {
-          background: 'rgba(0,0,0,0.7)',
-          margin: 16
-        }
-      }
-    ],
+    // [
+    //   'vuepress-plugin-medium-zoom',
+    //   {
+    //     selector: '.vuepress-blog-theme-content :not(a) > img',
+    //     options: {
+    //       background: 'rgba(0,0,0,0.7)',
+    //       margin: 16
+    //     }
+    //   }
+    // ],
     ['social-share', {
       networks: ['line', 'facebook', 'twitter', 'email'],
       email: 'clipwww@gmail.com',
@@ -153,9 +162,6 @@ module.exports = {
   },
   markdown: {
     lineNumbers: false,
-    toc: {
-      includeLevel: [2, 3, 4, 5, 6]
-    }
   },
   extendMarkdown: (md) => {
     md.set({ breaks: true, html: true, linkify: true });

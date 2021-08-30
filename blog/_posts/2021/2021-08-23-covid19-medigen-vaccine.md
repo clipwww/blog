@@ -41,7 +41,7 @@ location: 新北, 台灣
 
 1. 噴酒精、量體溫
 2. 領號碼牌、接種評估意願書
-3. 填寫意願書<br/><img src="https://imgur.com/2GpEkbF.jpg" style="max-width: 150px" alt="高端疫苗接種評估意願書">
+3. 填寫意願書<br/><img src="https://imgur.com/2GpEkbF.jpg" style="max-width: 150px" alt="高端疫苗接種評估意願書" data-action="zoom" />
 
 4. 出示身分證報到，領小黃卡`COVID-19 疫苗接種紀錄卡`
    結果人不多不用等叫號就可以直接報到了

@@ -18,9 +18,9 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
 ## 隊伍
 
 <div class="flex w-full my-2">
-  <img class="w-1/3" src="https://imgur.com/5Up9Fgk.png" alt="肥" />
-  <img class="w-1/3" src="https://imgur.com/7OAlzvi.png" alt="草" />
-  <img class="w-1/3" src="https://imgur.com/FYpcVIk.png" alt="內洽"/>
+  <img class="w-1/3" src="https://imgur.com/5Up9Fgk.png" alt="肥" data-action="zoom" />
+  <img class="w-1/3" src="https://imgur.com/7OAlzvi.png" alt="草" data-action="zoom" />
+  <img class="w-1/3" src="https://imgur.com/FYpcVIk.png" alt="內洽" data-action="zoom" />
 </div>
 
 ## 無限制組預賽
@@ -56,7 +56,7 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
 
 ## A組決賽
 
-<img class="my-2 w-1/3" src="https://i.imgur.com/dBNKwgz.jpg" alt="A決"/>
+<img class="my-2 w-1/3" src="https://i.imgur.com/dBNKwgz.jpg" alt="A決" data-action="zoom" />
 
 配對的大勝利 + 技能都開的及時
 - 不會釣魚的單逃S波旁

@@ -92,8 +92,6 @@ module.exports = themeConfig => {
   const enableSmoothScroll = themeConfig.smoothScroll === true
 
   const plugins = [
-    '@vuepress/plugin-nprogress',
-    ['@vuepress/medium-zoom', true],
     [
       '@vuepress/search',
       {
@@ -103,19 +101,6 @@ module.exports = themeConfig => {
     ['@vuepress/blog', blogPluginOptions],
     ['smooth-scroll', enableSmoothScroll],
   ]
-
-  /**
-   * Enable pwa
-   */
-  if (themeConfig.pwa) {
-    plugins.push([
-      '@vuepress/pwa',
-      {
-        serviceWorker: true,
-        updatePopup: true,
-      },
-    ])
-  }
 
   const config = {
     plugins,
