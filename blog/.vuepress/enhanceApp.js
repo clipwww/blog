@@ -4,7 +4,6 @@
  * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
  */
  import "zoom-vanilla.js/dist/zoom.css"
- import "zoom-vanilla.js/dist/zoom-vanilla.min.js"
 
  export function addLinkToHead(href) {
   const iconLink = document.createElement("link");
@@ -44,5 +43,6 @@
   // ...apply enhancements to the app
   if (!isServer) {
     registerCodeThemeCss(siteData.themeConfig.codeTheme);
+    require('zoom-vanilla.js/dist/zoom-vanilla.min.js');
   }
 }
