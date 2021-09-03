@@ -71,16 +71,15 @@ export default {
       });
     },
   },
-  created() {
+  mounted() {
+    this.addCodeBtn();
+
     const view = localStorage.getItem(this.pageKey);
     if (view) {
       this.getViewCount();
     } else {
       this.addViewCount();
     }
-  },
-  mounted() {
-    this.addCodeBtn();
   },
   methods: {
     addCodeBtn() {
