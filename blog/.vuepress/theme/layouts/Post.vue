@@ -14,6 +14,7 @@
           :author="$frontmatter.author"
           :date="$frontmatter.date"
           :location="$frontmatter.location"
+          :viewCount="viewCount"
         />
       </header>
 
@@ -22,9 +23,7 @@
       <div class="text-center text-xs text-gray-600 dark:text-gray-300 my-6">
         <social-share />
         <div>
-          <span class="font-bold mr-1">
-            Last Updated:
-          </span>
+          <span class="font-bold mr-1">Last Updated:</span>
           <span>{{ $page.lastUpdated }}</span>
         </div>
       </div>
@@ -39,6 +38,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 import Toc from "@theme/components/Toc.vue";
 import PostMeta from "@theme/components/PostMeta.vue";
 import { Comment } from "@vuepress/plugin-blog/lib/client/components";
@@ -50,13 +51,33 @@ export default {
     Comment,
     Newsletter: () => import("@theme/components/Newsletter.vue"),
   },
-
+  data() {
+    return {
+      viewCount: 0,
+    };
+  },
+  computed: {
+    pageKey() {
+      return this.$page.key;
+    },
+    apiUrl() {
+      return `https://mechakucha-api.herokuapp.com/blog/post/${this.pageKey}/view-count`;
+    },
+  },
   watch: {
     $route() {
       this.$nextTick(() => {
         this.addCodeBtn();
       });
     },
+  },
+  created() {
+    const view = localStorage.getItem(this.pageKey);
+    if (view) {
+      this.getViewCount();
+    } else {
+      this.addViewCount();
+    }
   },
   mounted() {
     this.addCodeBtn();
@@ -91,6 +112,31 @@ export default {
         if (value.classList.contains("code-button")) return true;
         return false;
       });
+    },
+    async getViewCount() {
+      try {
+        const { data: ret } = await axios.get(this.apiUrl);
+        if (!ret.success) {
+          return;
+        }
+
+        this.viewCount = ret.item.viewCount;
+      } catch (err) {
+        console.log(err);
+      }
+    },
+    async addViewCount() {
+      try {
+        const { data: ret } = await axios.post(this.apiUrl);
+        if (!ret.success) {
+          return;
+        }
+
+        this.viewCount = ret.item.viewCount;
+        localStorage.setItem(this.pageKey, new Date());
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
 };

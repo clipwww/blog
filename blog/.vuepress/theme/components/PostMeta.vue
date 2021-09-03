@@ -2,7 +2,7 @@
   <div class="post-meta">
     <div
       v-if="author"
-      class="post-meta-author"
+      class="post-meta-author flex items-center"
       itemprop="publisher author"
       itemtype="http://schema.org/Person"
       itemscope
@@ -11,11 +11,15 @@
       <span itemprop="name">{{ author }}</span>
       <span v-if="location" itemprop="address"> &nbsp; in {{ location }}</span>
     </div>
-    <div v-if="date" class="post-meta-date">
+    <div v-if="date" class="post-meta-date flex items-center">
       <ClockIcon />
       <time pubdate itemprop="datePublished" :datetime="date">
         {{ resolvedDate }}
       </time>
+    </div>
+    <div v-if="viewCount" class="flex items-center">
+      <EyeIcon />
+      <span>{{ viewCount }}</span>
     </div>
     <ul v-if="tags" class="post-meta-tags" itemprop="keywords">
       <PostTag v-for="tag in resolvedTags" :key="tag" :tag="tag" />
@@ -26,14 +30,14 @@
 <script>
 import dayjs from 'dayjs'
 import dayjsPluginUTC from 'dayjs/plugin/utc'
-import { NavigationIcon, ClockIcon } from 'vue-feather-icons'
+import { NavigationIcon, ClockIcon, EyeIcon } from 'vue-feather-icons'
 import PostTag from './PostTag.vue'
 
 dayjs.extend(dayjsPluginUTC)
 
 export default {
   name: 'PostMeta',
-  components: { NavigationIcon, ClockIcon, PostTag },
+  components: { NavigationIcon, ClockIcon, PostTag, EyeIcon },
   props: {
     tags: {
       type: [Array, String],
@@ -47,6 +51,9 @@ export default {
     location: {
       type: String,
     },
+    viewCount: {
+      type: Number,
+    }
   },
   computed: {
     resolvedDate() {
