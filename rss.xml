@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Fri, 03 Sep 2021 07:36:26 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Sep 2021 09:50:51 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -41,6 +41,15 @@
             <pubDate>Fri, 27 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[特別肥，我的超人]]></description>
             <enclosure url="https://i.imgur.com/nHtRWwj.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[position:sticky;]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/07/position-sticky/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/07/position-sticky/</guid>
+            <pubDate>Tue, 07 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[工作上用到「黏性定位」，紀錄一下]]></description>
+            <enclosure url="https://clipwww.github.io/blog/@/images/w3c-box-model.png">
             </enclosure>
         </item>
     </channel>
