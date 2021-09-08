@@ -94,17 +94,17 @@ module.exports = {
     //     ga: 'UA-93335284-1',
     //   },
     // ],
+    // [
+    //   '@vuepress/pwa',
+    //   {
+    //     serviceWorker: true,
+    //     updatePopup: {
+    //       message: "發現了新的內容",
+    //       buttonText: "重新整理"
+    //     }
+    //   }
+    // ],
     ['minimal-analytics', { ga: 'UA-93335284-1' }],
-    [
-      '@vuepress/pwa',
-      {
-        serviceWorker: true,
-        updatePopup: {
-          message: "發現了新的內容",
-          buttonText: "重新整理"
-        }
-      }
-    ],
     ['@kawarimidoll/tailwind', {
       darkMode: 'class',
       theme: {
@@ -123,7 +123,7 @@ module.exports = {
     }],
     ['@vuepress/nprogress'],
     ['@vuepress/last-updated', {
-      transformer(timestamp, lang){
+      transformer(timestamp, lang) {
         return dayjs(timestamp).format('YYYY/MM/DD HH:mm:ss')
       }
     }],
