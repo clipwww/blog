@@ -55,3 +55,24 @@ export function findContainerInVm(ref, vm, def) {
   }
   return container || def
 }
+
+
+export function useThemeLocalStorage() {
+  const key = 'is-dark';
+
+  function set(bool) {
+    window.localStorage.setItem(key, bool);
+  }
+
+  function get() {
+    const value = window.localStorage.getItem(key);
+    if (!!value) return value === 'true';
+
+    return  window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  return {
+    set,
+    get,
+  }
+}
