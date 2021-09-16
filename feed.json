@@ -44,6 +44,14 @@
             "summary": "工作上用到「黏性定位」，紀錄一下",
             "image": "https://clipwww.github.io/blog/@/images/w3c-box-model.png",
             "date_modified": "2021-09-07T00:00:00.000Z"
+        },
+        {
+            "id": "https://clipwww.github.io/blog/2021/09/16/utterances/",
+            "url": "https://clipwww.github.io/blog/2021/09/16/utterances/",
+            "title": "用 utterances 簡單快速的幫 blog 加上留言功能",
+            "summary": "utterance 是一個基於 Github issues 構建的輕量級評論小組件。",
+            "image": "https://i.imgur.com/krV4Jc8.png",
+            "date_modified": "2021-09-16T00:00:00.000Z"
         }
     ]
 }
