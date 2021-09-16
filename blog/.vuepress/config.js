@@ -33,10 +33,10 @@ module.exports = {
         text: 'Tags',
         link: '/tag/'
       },
-      // {
-      //   text: 'Link',
-      //   link: '/link/'
-      // },
+      {
+        text: 'Link',
+        link: '/link/'
+      },
     ],
     footer: {
       contact: [
