@@ -1,8 +1,4 @@
 const path = require('path');
-const dayjs = require('dayjs')
-require('dayjs/locale/zh-tw')
-
-dayjs.locale('zh-tw')
 
 const isDev = process.env.NODE_ENV === 'development';
 console.log('[NODE_ENV]', process.env.NODE_ENV)
@@ -124,6 +120,16 @@ module.exports = {
     ['@vuepress/nprogress'],
     ['@vuepress/last-updated', {
       transformer(timestamp, lang) {
+        const dayjs = require('dayjs')
+        const utc = require('dayjs/plugin/utc')
+        const timezone = require('dayjs/plugin/timezone')
+        // require('dayjs/locale/zh-tw')
+
+        dayjs.extend(utc)
+        dayjs.extend(timezone)
+        dayjs.tz.setDefault('Asia/Taipei')
+        // dayjs.locale('zh-tw')
+
         return dayjs(timestamp).format('YYYY/MM/DD HH:mm:ss')
       }
     }],

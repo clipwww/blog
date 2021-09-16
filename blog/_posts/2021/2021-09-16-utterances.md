@@ -1,6 +1,6 @@
 ---
 title: 用 utterances 簡單快速的幫 blog 加上留言功能
-summary: utterance 是一個基於 Github issues 構建的輕量級評論小組件。
+summary: utterance 是一個基於 Github issues 構建的輕量級小工具。
 date: 2021-09-16
 tags: 
   - JavaScript
