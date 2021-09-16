@@ -129,8 +129,9 @@ module.exports = {
         dayjs.extend(timezone)
         dayjs.tz.setDefault('Asia/Taipei')
         // dayjs.locale('zh-tw')
+        
 
-        return dayjs(timestamp).format('YYYY/MM/DD HH:mm:ss')
+        return dayjs(dayjs.tz(timestamp)).format('YYYY/MM/DD HH:mm:ss')
       }
     }],
     ['@vuepress/back-to-top'],
