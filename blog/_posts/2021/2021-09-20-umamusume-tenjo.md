@@ -117,16 +117,19 @@ export default {
       return this.records.reduce((sum, cur) => sum += cur.count, 0);
     },
     star1Count() {
-      return this.records.filter(item => item.star === 1).reduce((sum, cur) => sum += cur.count, 0);
+      return this.getCount(1)
     },
     star2Count() {
-      return this.records.filter(item => item.star === 2).reduce((sum, cur) => sum += cur.count, 0);
+      return this.getCount(2)
     },
     star3Count() {
-      return this.records.filter(item => item.star === 3).reduce((sum, cur) => sum += cur.count, 0);
+      return this.getCount(3)
     }
   },
   methods: {
+    getCount(star) {
+      return this.records.filter(item => item.star === star).reduce((sum, cur) => sum += cur.count, 0);
+    },
     getPercentage(count) {
       return `${((count / this.allCount) * 100).toFixed(2)}%`
     }
