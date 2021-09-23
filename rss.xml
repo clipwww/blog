@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Thu, 16 Sep 2021 10:41:58 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Sep 2021 03:41:39 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -60,6 +60,13 @@
             <description><![CDATA[utterance 是一個基於 Github issues 構建的輕量級評論小工具。]]></description>
             <enclosure url="https://i.imgur.com/krV4Jc8.png">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[馬娘池200抽紀錄，哭啊]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/20/umamusume-tenjo/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/20/umamusume-tenjo/</guid>
+            <pubDate>Mon, 20 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[天井の景色は譲らない]]></description>
         </item>
     </channel>
 </rss>
