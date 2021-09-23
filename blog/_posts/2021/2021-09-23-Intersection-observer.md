@@ -1,6 +1,6 @@
 ---
 title: Intersection Observer 筆記
-summary: Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入設定的條件時就呼叫 callback
+summary: Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入/離開設定的條件時就呼叫 callback
 date: 2021-09-23
 tags: 
   - JavaScript
@@ -9,7 +9,7 @@ location: 台北, 台灣
 ---
 
 ## Intersection Observer API
-觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入設定的條件時就呼叫 callback
+觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入/離開設定的條件時就呼叫 callback
 
 可以取代監聽 Scroll 事件的方式來實作：
 - Lazy Loading 圖片，當圖片出現在可視範圍時才開始載入
