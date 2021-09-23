@@ -174,7 +174,7 @@ export default {
     <div v-for="j in 5" :key="j" class="block px-4 py-1 text-lg" :class="{ 'text-red-400 text-3xl': activeNum === j }">{{ j }}</div>
   </div>
   <div class="w-1/2">
-    <div :id="`js-${n}`" :data-num="n" class="h-72 text-center flex items-center justify-center font-bold text-5xl text-black" :class="`bg-green-${n}00`" v-for="n in 5" :key="n">
+    <div :id="`js-${n}`" :data-num="n" class="h-72 text-center flex items-center justify-center font-bold text-5xl text-black" :class="bgList[n - 1]" v-for="n in 5" :key="n">
       {{ n }}
     </div>
   </div>
@@ -194,7 +194,6 @@ export default {
       <div :id="`js-${n}`" 
         :data-num="n" 
         class="..." 
-        :class="`bg-green-${n}00`" 
         v-for="n in 5" 
         :key="n">
         {{ n }}
@@ -237,6 +236,13 @@ export default {
   data() {
     return {
       activeNum: 1,
+      bgList: [
+        'bg-green-100',
+        'bg-green-200',
+        'bg-green-300',
+        'bg-green-400',
+        'bg-green-500',
+      ],
       imageIsIntersecting: false,
       isLoading: false,
       numList: Array(20).fill('R')
