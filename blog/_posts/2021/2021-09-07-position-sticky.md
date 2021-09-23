@@ -8,7 +8,12 @@ author: 我
 location: 台北, 台灣
 ---
 
+
 ## Sticky 黏性定位
+
+<div class="block sticky md:top-20 top-16 float-right z-10 w-32 text-center bg-green-400 p-2 rounded-b-full opacity-50 font-bold text-white">
+  Sicky
+</div>
 
 ```css
 position: sticky;
@@ -94,3 +99,5 @@ sticky element 是會黏在祖先的 `Content` 上
 
 [Can I Use: CSS Sticky](https://caniuse.com/css-sticky)
 <img src="https://i.imgur.com/hlId0Nm.png" data-action="zoom" alt="Can I Use" />
+
+

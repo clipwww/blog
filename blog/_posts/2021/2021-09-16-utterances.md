@@ -13,7 +13,7 @@ location: 台北, 台灣
 
 ## 序
 我原本留言功能是用 [Vssue](https://vssue.js.org/) 實現
-後來看別人的 blog 時發現了 [utterances](https://utteranc.es/)
+後來在閱讀別人的文章時時發現了 [utterances](https://utteranc.es/)
 同樣基於 Github issues 但有更多樣式可以選，而且可以對留言按 emoji（重要）
 
 ## 安裝

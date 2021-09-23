@@ -1,0 +1,135 @@
+---
+title: 馬娘池200抽紀錄，哭啊
+summary: 天井の景色は譲らない
+date: 2021-09-20
+tags:
+  - 雜記
+  - 遊戲
+  - ウマ娘
+---
+
+都存了快兩井還是等不到タマちゃん
+這次實裝アグネスデジタル也是前幾隻想要的就抽下去了
+順便想補個洞
+
+結果
+
+<table>
+  <caption>19次10抽 + 10張單抽券 = 200抽（天井）</caption>
+  <thead>
+    <tr>
+      <th class="whitespace-nowrap">名稱</th>
+      <th class="whitespace-nowrap">星數</th>
+      <th class="whitespace-nowrap">次數</th>
+      <th class="whitespace-nowrap">機率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="(item, index) in records" :key="index">
+      <td>
+        <span class="whitespace-nowrap">{{ item.name }}</span>
+        <span v-if="item.new" class="rounded-full bg-red-400 text-white text-xs px-2 font-bold">New！</span>
+      </td>
+      <td class="text-center">
+        <star-icon size="1x" class="text-yellow-400 text-xs" v-for="n in item.star"></star-icon>
+      </td>
+      <td class="text-center">
+        <span class="text-lg">{{ item.count }}</span>
+      </td>
+      <td>{{ getPercentage(item.count) }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tr>
+    <td class="text-right">三星</td>
+    <td>
+      {{ star3Count }}/{{ allCount }} = 
+      <span class="text-red-400 font-bold text-xl">{{ getPercentage(star3Count) }}</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="text-right">二星</td>
+    <td>{{ star2Count }}/{{ allCount }} = {{ getPercentage(star2Count) }}</td>
+  </tr>
+  <tr>
+    <td class="text-right">一星</td>
+    <td>{{ star1Count }}/{{ allCount }} = {{ getPercentage(star1Count) }}</td>
+  </tr>
+</table>
+
+デジたん是在第170抽出現，就乾脆補到天井了
+
+啊，這
+
+沒出現過理事長開門、沒有豪華門
+彩率是可笑的2趴
+然後洞一堆還能抽到重複的哭啊😭
+抽到拳鷹的意義也不大（還是原皮的好用
+
+算了，反正是微課仔靠免費石抽的
+雖然非洲了點，但至少也還是有達成目標
+
+🎀
+😭
+🙏
+
+阿哩嘎多
+
+
+<script>
+import { StarIcon } from 'vue-feather-icons'
+
+
+export default {
+  components: {
+    StarIcon,
+  },
+  data() {
+    return {
+      records: [
+        { name: 'アグネスタキオン', count: 27, new: false, star: 1, },
+        { name: 'ハルウララ', count: 19, new: false, star: 1, },
+        { name: 'キングヘイロー', count: 18, new: false, star: 1, },
+        { name: 'マチカネフクキタル', count: 17, new: false, star: 1, },
+        { name: 'ウイニングチケット', count: 17, new: false, star: 1, },
+        { name: 'ナイスネイチャ', count: 15, new: false, star: 1, },
+        { name: 'メジロライアン', count: 15, new: false, star: 1, },
+        { name: 'サクラバクシンオー', count: 11, new: false, star: 1, },
+        { name: 'エルコンドルパサー', count: 10, new: false, star: 2, },
+        { name: 'ゴールドシップ', count: 9, new: false, star: 2 },
+        { name: 'ウオッカ', count: 8, new: false, star: 2 },
+        { name: 'エアグルーヴ', count: 8, new: false, star: 2 },
+        { name: 'ダイワスカーレット', count: 7, new: false, star: 2 },
+        { name: 'スーパークリーク', count: 6, new: false, star: 2 },
+        { name: 'グラスワンダー', count: 5, new: false, star: 2 },
+        { name: 'マヤノトップガン', count: 4, new: false, star: 2 },
+        { name: 'トウカイテイオー', count: 1, new: false, star: 3 },
+        { name: 'オグリキャップ', count: 1, new: false, star: 3 },
+        { name: 'アグネスデジタル', count: 1, new: true, star: 3  },
+        { name: 'エルコンドルパサー(新衣装)', count: 1, new: true, star: 3  },
+      ]
+    }
+  },
+  computed: {
+    allCount() {
+      return this.records.reduce((sum, cur) => sum += cur.count, 0);
+    },
+    star1Count() {
+      return this.records.filter(item => item.star === 1).reduce((sum, cur) => sum += cur.count, 0);
+    },
+    star2Count() {
+      return this.records.filter(item => item.star === 2).reduce((sum, cur) => sum += cur.count, 0);
+    },
+    star3Count() {
+      return this.records.filter(item => item.star === 3).reduce((sum, cur) => sum += cur.count, 0);
+    }
+  },
+  methods: {
+    getPercentage(count) {
+      return `${((count / this.allCount) * 100).toFixed(2)}%`
+    }
+  }
+}
+</script>
