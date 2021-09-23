@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Thu, 23 Sep 2021 09:46:53 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 23 Sep 2021 09:49:18 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -73,7 +73,7 @@
             <link>https://clipwww.github.io/blog/2021/09/23/intersection-observer/</link>
             <guid>https://clipwww.github.io/blog/2021/09/23/intersection-observer/</guid>
             <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入設定的條件時就呼叫 callback]]></description>
+            <description><![CDATA[Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入/離開設定的條件時就呼叫 callback]]></description>
             <enclosure url="https://picsum.photos/128">
             </enclosure>
         </item>
