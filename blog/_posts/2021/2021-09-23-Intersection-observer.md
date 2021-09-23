@@ -84,8 +84,9 @@ observer.unobserve(document.querySelector('.js-target'))
 ## 範例
 ### Lazy Loading 圖片
 
-<div>isIntersecting: {{ imageIsIntersecting }}</div>
-<img class="block w-32 h-32 bg-gray-400 js-lazyload" data-src="https://picsum.photos/128" />
+<img class="block w-32 h-32 bg-gray-400 js-lazyload mt-2" data-src="https://picsum.photos/64" />
+<img class="block w-64 h-64 bg-gray-400 js-lazyload" data-src="https://picsum.photos/128" />
+<img class="block w-80 h-80 bg-gray-400 js-lazyload" data-src="https://picsum.photos/256" />
 
 ```html
 <img class="... js-lazyload" data-src="https://picsum.photos/128" />
@@ -110,16 +111,16 @@ document.querySelectorAll('.js-lazyload').forEach(el => {
 ### Infinite Scroll 無限加載內容
 
 <div>內容數量 {{ numList.length }}</div>
-<div id="js-loadmore-wrap" class="relative my-2 border-solid border h-64 overflow-y-auto overscroll-y-contain">
+<div ref="loadmore-wrap" class="relative my-2 border-solid border h-64 overflow-y-auto overscroll-y-contain">
   <div class="border-solid border-t-0 border-l-0 border-r-0 border-b px-4 py-2" v-for="(num, index) in numList" :key="index">{{ index + 1 }}</div>
-  <div id="js-loadmore" class="text-center py-2">{{ isLoading ? '載入中...' : isMax ? '沒有更多了' : '・・・' }}</div>
+  <div ref="loadmore" class="text-center py-2">{{ isLoading ? '載入中...' : isMax ? '沒有更多了' : '・・・' }}</div>
 </div>
 
 ```vue
 <template>
-  <div id="js-loadmore-wrap" class="... overflow-y-auto overscroll-y-contain">
+  <div ref="loadmore-wrap" class="... overflow-y-auto overscroll-y-contain">
     <div class="..." v-for="(num, index) in numList" :key="index">{{ index + 1 }}</div>
-    <div id="js-loadmore" class="text-center py-2">
+    <div ref="loadmore" class="text-center py-2">
       {{ isLoading ? '載入中...' : isMax ? '沒有更多了' : '・・・' }}
     </div>
   </div>
@@ -130,7 +131,7 @@ export default {
   data() {
     return {
       isLoading: false,
-      numList: Array(20).fill('R')
+      numList: Array(20).fill('')
     }
   },
   computed: {
@@ -146,11 +147,11 @@ export default {
         }
       })
     },{ 
-      root: document.querySelector('#js-loadmore-wrap'),
+      root: this.$refs['loadmore-wrap'],
       threshold: 0.3 
     });
 
-    observer.observe(document.querySelector('#js-loadmore'))
+    observer.observe(this.$refs.loadmore)
   },
   methods: {
     loadMore() {
@@ -159,8 +160,8 @@ export default {
       this.isLoading = true;
       setTimeout(() => {
         this.isLoading = false;
-        this.numList.push(...Array(20).fill('R'))
-      }, 1500)
+        this.numList.push(...Array(20).fill(''))
+      }, 1000)
     }
   }
 }
@@ -169,12 +170,12 @@ export default {
 
 ### Scroll Spy 滾動監控
 <div>Active Number: {{ activeNum }}</div>
-<div id="js-scrollspy-wrap" class="relative my-2 border-solid border flex h-72 overflow-y-auto overscroll-y-contain">
+<div ref="scrollspy-wrap" class="relative my-2 border-solid border flex h-72 overflow-y-auto overscroll-y-contain">
   <div class="sticky top-0 w-1/2">
     <div v-for="j in 5" :key="j" class="block px-4 py-1 text-lg" :class="{ 'text-red-400 text-3xl': activeNum === j }">{{ j }}</div>
   </div>
   <div class="w-1/2">
-    <div :id="`js-${n}`" :data-num="n" class="h-72 text-center flex items-center justify-center font-bold text-5xl text-black" :class="bgList[n - 1]" v-for="n in 5" :key="n">
+    <div :ref="`spy${n}`" :data-num="n" class="h-72 text-center flex items-center justify-center font-bold text-5xl text-black" :class="bgList[n - 1]" v-for="n in 5" :key="n">
       {{ n }}
     </div>
   </div>
@@ -182,7 +183,7 @@ export default {
 
 ```vue
 <template>
-  <div id="js-scrollspy-wrap" class="relative ... overflow-y-auto overscroll-y-contain">
+  <div ref="scrollspy-wrap" class="relative ... overflow-y-auto overscroll-y-contain">
     <div class="sticky top-0 w-1/2">
       <div v-for="j in 5" 
         :key="j" class="..." 
@@ -191,7 +192,7 @@ export default {
       </div>
     </div>
     <div class="w-1/2">
-      <div :id="`js-${n}`" 
+      <div :ref="`spy${n}`" 
         :data-num="n" 
         class="..." 
         v-for="n in 5" 
@@ -218,12 +219,13 @@ export default {
         }
       })
     },{ 
-      root: document.querySelector('#js-scrollspy-wrap'),
+      root: this.$refs['scrollspy-wrap'],
       threshold: 0.4
     });
 
     Array(5).fill('').forEach((_, i) => {
-      observer.observe(document.querySelector(`#js-${i + 1}`))
+      const temp = this.$refs[`spy${i + 1}`];
+      observer3.observe(temp?.[0] ?? temp)
     })
   },
 }
@@ -243,9 +245,8 @@ export default {
         'bg-green-400',
         'bg-green-500',
       ],
-      imageIsIntersecting: false,
       isLoading: false,
-      numList: Array(20).fill('R')
+      numList: Array(20).fill('')
     }
   },
   computed: {
@@ -259,7 +260,6 @@ export default {
         if (entry.isIntersecting) {
           const img = entry.target;
           img.src = img.getAttribute('data-src')
-          this.imageIsIntersecting = true;
           observer.unobserve(img)
         }
       })
@@ -276,12 +276,13 @@ export default {
         }
       })
     },{ 
-      root: document.querySelector('#js-loadmore-wrap'),
+      root: this.$refs['loadmore-wrap'],
       threshold: 0.3 
     });
 
-    observer2.observe(document.querySelector('#js-loadmore'))
+    observer2.observe(this.$refs.loadmore)
 
+    console.log(this.$refs)
     const observer3 = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -290,12 +291,13 @@ export default {
         }
       })
     },{ 
-      root: document.querySelector('#js-scrollspy-wrap'),
+      root: this.$refs['scrollspy-wrap'],
       threshold: 0.4
     });
 
     Array(5).fill('').forEach((_, i) => {
-      observer3.observe(document.querySelector(`#js-${i + 1}`))
+      const temp = this.$refs[`spy${i + 1}`];
+      observer3.observe(temp?.[0] ?? temp)
     })
   },
   methods: {
@@ -305,8 +307,8 @@ export default {
       this.isLoading = true;
       setTimeout(() => {
         this.isLoading = false;
-        this.numList.push(...Array(20).fill('R'))
-      }, 1500)
+        this.numList.push(...Array(20).fill(''))
+      }, 1000)
     }
   }
 }
