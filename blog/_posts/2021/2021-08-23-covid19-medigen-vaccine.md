@@ -37,7 +37,7 @@ location: 新北, 台灣
 8/23 10:30-11:30 在林口南勢市民活動中心疫苗接種站
 
 
-![林口南勢市民活動中心疫苗接種站](https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.6435-9/235344673_2258225797647123_8983768337522143881_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=wMCx1WbXUEUAX-iiZf7&_nc_ht=scontent.ftpe8-4.fna&oh=b42981bdafc3fdc7a184b0d2ca2553b4&oe=614747CA)
+![林口南勢市民活動中心疫苗接種站](https://i.imgur.com/yKLoI6M.png)
 
 1. 噴酒精、量體溫
 2. 領號碼牌、接種評估意願書

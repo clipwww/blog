@@ -7,12 +7,10 @@ tags:
   - Vue
   - VuePress
   - utterances
-author: 我
-location: 台北, 台灣
 ---
 
 ## 序
-我原本留言功能是用 [Vssue](https://vssue.js.org/) 實現
+原本留言功能是用 [Vssue](https://vssue.js.org/) 實現
 後來在閱讀別人的文章時時發現了 [utterances](https://utteranc.es/)
 同樣基於 Github issues 但有更多樣式可以選，而且可以對留言按 emoji（重要）
 
@@ -67,7 +65,7 @@ github-light、github-dark...等
 詳細可參考 utterances [官方文件](https://utteranc.es/)
 
 ## Vue Component
-因為我是用 VuePress 的 @vuepress/theme-blog 建置 blog
+因為是用 VuePress 的 @vuepress/theme-blog 建置 blog
 那就要替換掉原本在 layouts > Post.vue 裡使用的 @vuepress/plugin-blog - Comment 組件
 
 ```vue

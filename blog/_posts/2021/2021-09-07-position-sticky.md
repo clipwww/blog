@@ -4,8 +4,6 @@ summary: 工作上用到「黏性定位」，紀錄一下
 date: 2021-09-07
 tags: 
   - CSS
-author: 我
-location: 台北, 台灣
 ---
 
 

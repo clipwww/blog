@@ -6,8 +6,6 @@ tags:
   - JavaScript
   - Google Sheets
   - JSON
-author: 我
-location: 台北, 台灣
 ---
 
 想做個自己進電影院看電影的紀錄
