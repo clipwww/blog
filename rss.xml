@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Thu, 23 Sep 2021 10:18:07 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 24 Sep 2021 07:25:15 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -76,6 +76,13 @@
             <description><![CDATA[Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入/離開設定的條件時就呼叫 callback]]></description>
             <enclosure url="https://picsum.photos/64">
             </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[外間距折疊 (Collapsing margins) 筆記]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/24/margin-top/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/24/margin-top/</guid>
+            <pubDate>Fri, 24 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[有時候會發生 margin-top 失效，以為遇到什麼 bug]]></description>
         </item>
     </channel>
 </rss>
