@@ -30,7 +30,7 @@
       <footer>
         <Newsletter v-if="$service.email.enabled" />
         <hr />
-        <Utterances :theme="theme" :key="theme" />
+        <Comment />
       </footer>
     </article>
     <Toc />
@@ -42,7 +42,7 @@ import axios from "axios";
 
 import Toc from "@theme/components/Toc.vue";
 import PostMeta from "@theme/components/PostMeta.vue";
-import Utterances from "@theme/components/Utterances.vue";
+import Comment from "@theme/components/Comment.vue";
 // import { Comment } from "@vuepress/plugin-blog/lib/client/components";
 
 import { useThemeLocalStorage } from '../components/util';
@@ -52,14 +52,12 @@ export default {
   components: {
     Toc,
     PostMeta,
-    Utterances,
-    // Comment,
+    Comment,
     Newsletter: () => import("@theme/components/Newsletter.vue"),
   },
   data() {
     return {
       viewCount: 0,
-      theme: "",
     };
   },
   computed: {
@@ -77,9 +75,7 @@ export default {
       });
     },
   },
-  mounted() {
-    this.onThemeChanged();
-    
+  mounted() {    
     this.addCodeBtn();
 
     const view = localStorage.getItem(this.pageKey);
@@ -88,11 +84,6 @@ export default {
     } else {
       this.addViewCount();
     }
-
-    window.addEventListener("theme-changed", this.onThemeChanged);
-  },
-  beforeDestroy() {
-    window.removeEventListener("theme-changed", this.onThemeChanged);
   },
   methods: {
     addCodeBtn() {
@@ -149,11 +140,6 @@ export default {
       } catch (err) {
         console.log(err);
       }
-    },
-    onThemeChanged(e) {
-      const themeLocalStorage = useThemeLocalStorage();
-      const isDark = themeLocalStorage.get();
-      this.theme = isDark ? "github-dark" : "github-light";
     },
   },
 };

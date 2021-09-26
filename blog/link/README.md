@@ -4,6 +4,7 @@
 - [Vue.js](https://vuejs.org/)
 - [Awesome Vue.js](https://awesome-vue.js.org/)
 - [VueUse](https://vueuse.org/)
+- [Vue Feather Icons](https://vue-feather-icons.egoist.sh/)
 
 ### VuePress
 - [VuePress](https://vuepress.vuejs.org/)
