@@ -17,7 +17,7 @@
         class="block no-underline my-1 text-lg"
         :link="post.path">
         {{ post.title }}
-        </NavLink>
+      </NavLink>
       <div class="text-xs">{{ post.frontmatter.summary }}</div>
     </div>
   </div>
@@ -68,7 +68,7 @@ export default {
         .format(this.$themeConfig.dateFormat || 'ddd MMM DD YYYY')
     },
     handlePostSort(a, b) {
-      return  dayjs(a.frontmatter.date).isBefore(b.frontmatter.date) ? 1 : -1
+      return dayjs(a.frontmatter.date).isBefore(b.frontmatter.date) ? 1 : -1
     }
   }
 }

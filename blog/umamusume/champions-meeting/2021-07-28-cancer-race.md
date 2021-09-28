@@ -6,9 +6,6 @@ date: 2021-07-28
 icon: https://i.imgur.com/5PRs0A3.png
 ---
 
-<NavLink></NavLink>
-
-
 ## 場地
 
 <div class="font-bold text-xl">東京 芝 1600m (マイル) 左 夏 ☀️ 稍重</div>
@@ -66,11 +63,13 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/287165)
 決賽沒配到超強青雲
 神鷹成功搶到前2，進終盤直線輕鬆開固有逃爛
 
+
 <div class="text-center mt-10">
 
 [回上一頁](../README.md)
 
 </div>
+
 
 <script>
 export default {
