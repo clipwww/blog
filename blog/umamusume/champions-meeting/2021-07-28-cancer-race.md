@@ -49,6 +49,10 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/287165)
       <td>{{ ((record.first + record.second) / getSum(record) * 100).toFixed(2) }}%</td>
       <td>{{ ((record.first + record.second + record.third) / getSum(record) * 100).toFixed(2) }}%</td>
     </tr>
+    <tr>
+      <th>勝率</th>
+      <td colspan="8" class="text-left">{{ winRate }}%</td>
+    </tr>
   </tbody>
 </table>
 
@@ -78,7 +82,7 @@ export default {
       records: [
         {
           name: 'エルコンドルパサー',
-          first: 30,
+          first: 29,
           second: 11,
           third: 4,
           out: 36
@@ -99,6 +103,15 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    winRate() {
+       const first = this.records.reduce((sum, item) => {
+         return sum += item.first
+       }, 0)
+
+       return ((first / 80) * 100).toFixed(2)
+    }
   },
   methods: {
     getSum(record) {
