@@ -1,24 +1,24 @@
 ---
 layout: Post
-title: レオ杯
-summary: 特別週，我的超人
-date: 2021-08-27
-icon: https://i.imgur.com/2ZNoVXv.png
+title: キャンサー杯
+summary: 神鷹，我的超人
+date: 2021-07-28
+icon: https://i.imgur.com/5PRs0A3.png
 ---
 
 ## 場地
 
-<div class="font-bold text-xl">阪神 芝 2200m (中距離) 右・內 夏 ☀️ 良</div>
+<div class="font-bold text-xl">東京 芝 1600m (マイル) 左 夏 ☀️ 稍重</div>
 
-![レオ杯 レースデータ](https://i.imgur.com/nHtRWwj.png)
-source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
+![キャンサー杯 レースデータ](https://i.imgur.com/e8bV54q.png)
+source: [GameWith](https://gamewith.jp/uma-musume/article/show/287165)
 
 ## 隊伍
 
 <div class="flex w-full my-2">
-  <img class="w-1/3" src="https://imgur.com/5Up9Fgk.png" alt="肥" data-action="zoom" />
-  <img class="w-1/3" src="https://imgur.com/7OAlzvi.png" alt="草" data-action="zoom" />
-  <img class="w-1/3" src="https://imgur.com/FYpcVIk.png" alt="內洽" data-action="zoom" />
+  <img class="w-1/3" src="https://imgur.com/QEWb4b9.png" alt="" data-action="zoom" />
+  <img class="w-1/3" src="https://imgur.com/eVgkeLf.png" alt="" data-action="zoom" />
+  <img class="w-1/3" src="https://imgur.com/qeqcsMw.png" alt="" data-action="zoom" />
 </div>
 
 ## 無限制組預賽
@@ -56,23 +56,17 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
   </tbody>
 </table>
 
-帶咒術馬最想看到的就是[像這樣](https://i.imgur.com/RxMsJfs.mp4)讓人耐切散步🤣
+
 
 ## A組決賽
 
-<img class="my-2 w-1/3" src="https://i.imgur.com/dBNKwgz.jpg" alt="A決" data-action="zoom" />
-<img class="my-2 w-1/3" src="https://imgur.com/PQGnd0A.png" alt="" data-action="zoom" />
+<img class="my-2 w-1/3" src="https://imgur.com/FModHeR.png" alt="A決" data-action="zoom" />
 
+<img class="my-2 w-1/3" src="https://imgur.com/rtxiTqs.png" alt="" data-action="zoom" />
 
-配對的大勝利 + 技能都開的及時
-- 不會釣魚的單逃S波旁
-- 僅有一隻中距離S的白仁(2着)
-- 特別肥雙金回都有開，而且只有我帶咒術馬完全不擔心肥耐切
-- 紅焰+固有+全身全靈一氣呵成成功突破包圍沒撞牆
+決賽沒配到超強青雲
+神鷹成功搶到前2，進終盤直線輕鬆開固有逃爛
 
-<div class="aspect-w-16 aspect-h-9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/i_shZaQ0aFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 <div class="text-center mt-10">
 
@@ -80,31 +74,32 @@ source: [GameWith](https://gamewith.jp/uma-musume/article/show/289441)
 
 </div>
 
+
 <script>
 export default {
   data() {
     return {
       records: [
         {
-          name: 'スペシャルウィーク',
-          first: 46,
-          second: 16,
-          third: 7,
-          out: 11
+          name: 'エルコンドルパサー',
+          first: 29,
+          second: 11,
+          third: 4,
+          out: 36
         },
         {
           name: 'グラスワンダー',
-          first: 14,
-          second: 18,
-          third: 10,
-          out: 38
+          first: 9,
+          second: 9,
+          third: 11,
+          out: 51
         },
         {
-          name: 'ナイスネイチャ',
-          first: 0,
-          second: 0,
-          third: 1,
-          out: 79
+          name: 'ナリタタイシン',
+          first: 16,
+          second: 11,
+          third: 13,
+          out: 40
         }
       ]
     };

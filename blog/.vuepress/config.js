@@ -115,7 +115,7 @@ module.exports = {
       ]
     }],
     ['reading-progress', {
-      readingDir: ['_posts', 'about', 'link', 'tag']
+      readingDir: ['_posts', 'about', 'link', 'tag', 'umamusume']
     }],
     ['@vuepress/nprogress'],
     ['@vuepress/last-updated', {
