@@ -1,4 +1,6 @@
-## Link
+<h2>Link</h2>
+
+[[toc]]
 
 ### Vue
 - [Vue.js](https://vuejs.org/)
@@ -22,7 +24,11 @@
 
 ### UI/UX
 - [用 hover 取代 click 來開啟選單並不是一個好設計](https://jason-memo.dev/posts/replacing-click-with-hover-interaction-is-not-a-good-design/)
+- [300 毫秒点击延迟的来龙去脉](https://thx.github.io/mobile/300ms-click-delay)
 
+### Google
+- [Migrating from Google Sign-In](https://developers.google.com/identity/gsi/web/guides/migration)
+- [Sign In With Google JavaScript API reference ](https://developers.google.com/identity/gsi/web/reference/js-reference#google.accounts.id.prompt)
 
 ### Tool
 - [Lorem Picsum, Image placeholder](https://picsum.photos/)

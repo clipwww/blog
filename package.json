@@ -41,6 +41,7 @@
     "@vueuse/core": "^6.5.3",
     "dayjs": "^1.10.6",
     "dotenv": "^10.0.0",
+    "jsqr": "^1.4.0",
     "lodash": "^4.17.21",
     "zoom-vanilla.js": "^2.0.6"
   }
