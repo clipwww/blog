@@ -59,6 +59,14 @@
             "title": "外間距折疊 (Collapsing margins) 筆記",
             "summary": "有時候會發生 margin-top 失效，以為遇到什麼 bug",
             "date_modified": "2021-09-24T00:00:00.000Z"
+        },
+        {
+            "id": "https://clipwww.github.io/blog/2021/10/15/css-triangle/",
+            "url": "https://clipwww.github.io/blog/2021/10/15/css-triangle/",
+            "title": "用 CSS Border 做三角形",
+            "summary": "之前只會做正三角，原來還可以調整角度",
+            "image": "https://i.imgur.com/wWHk4tY.png",
+            "date_modified": "2021-10-15T00:00:00.000Z"
         }
     ]
 }
