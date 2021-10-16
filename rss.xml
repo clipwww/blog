@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Fri, 15 Oct 2021 07:56:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 16 Oct 2021 04:48:25 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -73,7 +73,7 @@
             <link>https://clipwww.github.io/blog/2021/10/15/css-triangle/</link>
             <guid>https://clipwww.github.io/blog/2021/10/15/css-triangle/</guid>
             <pubDate>Fri, 15 Oct 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[之前只會做正三角，原來還可以調整角度]]></description>
+            <description><![CDATA[之前只會做等腰三角，長知識記錄一下]]></description>
             <enclosure url="https://i.imgur.com/wWHk4tY.png">
             </enclosure>
         </item>
