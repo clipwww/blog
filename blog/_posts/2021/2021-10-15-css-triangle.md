@@ -1,6 +1,6 @@
 ---
 title: 用 CSS Border 做三角形
-summary: 之前只會做正三角，原來還可以調整角度
+summary: 之前只會做等腰三角，長知識記錄一下
 date: 2021-10-15
 tags: 
   - CSS
