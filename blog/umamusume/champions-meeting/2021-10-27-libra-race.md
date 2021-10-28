@@ -53,11 +53,14 @@ R2 Day2 跟中邪一樣各種金回不發、撞牆
   <img class="w-1/3" src="https://imgur.com/JIW5MYW.png" alt="" data-action="zoom" />
 </div>
 
+金回跟一氣都有開，位置也不差，直接包了前3 😎
+茶座的金紅技看起來也成功讓對手的大進耐不足
 
+總歸一句：Cool Down 狗都不點
 
-<!-- <div class="aspect-w-16 aspect-h-9">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/x9tt-IK0czU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
+<div class="aspect-w-16 aspect-h-9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kukU-ADZ02A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <div class="text-center mt-10">
 
