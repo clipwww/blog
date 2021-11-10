@@ -1,7 +1,7 @@
 ---
 layout: Post
 title: ライブラ杯
-summary: 黃金船，我的超人
+summary: 船，我的超人
 date: 2021-10-27
 icon: https://i.imgur.com/oB3lfsb.png
 ---
