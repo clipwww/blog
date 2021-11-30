@@ -40,6 +40,7 @@ export default {
             { name: 'LABO Toy-Con 04: VR Kit' },
             { name: '越南大戰 X' },
             { name: '寶可夢：劍' },
+            { name: '寶可夢：晶燦鑽石' },
             { name: '集合啦！動物森友會' }
           ]
         },
