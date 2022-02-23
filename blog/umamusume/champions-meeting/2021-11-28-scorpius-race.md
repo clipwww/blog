@@ -11,7 +11,8 @@ icon: https://i.imgur.com/bj75NK2.png
 
 <div class="font-bold text-xl">東京 芝 2000m (中距離) 左 秋 🌧️ 重</div>
 就秋季天皇賞
-[Gamewith](https://gamewith.jp/uma-musume/article/show/303393)
+
+source: [GameWith](https://gamewith.jp/uma-musume/article/show/303393)
 
 ## 隊伍
 
