@@ -65,7 +65,7 @@ export default {
       return this.$page.key;
     },
     apiUrl() {
-      return `https://mechakucha-api.herokuapp.com/blog/post/${this.pageKey}/view-count`;
+      return `http://mechakucha-api.fly.dev/blog/post/${this.pageKey}/view-count`;
     },
   },
   watch: {
