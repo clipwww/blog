@@ -45,7 +45,7 @@ export default {
             { name: '寶可夢傳說：阿爾宙斯' },
             { name: '集合啦！動物森友會' },
             { name: '十三機兵防衛圈' },
-            { name: '異度神劍 3' },
+            { name: '異度神劍 3 & DLC' },
           ]
         },
         {
@@ -60,7 +60,8 @@ export default {
             { name: 'Untitled Goose Game' },
             { name: '還願' },
             { name: '地球防衛軍 5' },
-            { name: '空戰奇兵 7：未知天際' }
+            { name: '空戰奇兵 7：未知天際' },
+            { name: '最後指令 Last Command' }
           ]
         }
       ],

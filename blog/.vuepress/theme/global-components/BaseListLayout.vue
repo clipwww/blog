@@ -61,11 +61,11 @@
           >
             <TagIcon />
             <router-link
-              v-for="tag in resolvePostTags(page.frontmatter.tags)"
+              v-for="(tag, index) in resolvePostTags(page.frontmatter.tags)"
               :key="tag"
               :to="'/tag/' + tag"
             >
-              {{ tag }}
+              {{ tag }}<template v-if="index !== resolvePostTags(page.frontmatter.tags).length - 1">,</template>
             </router-link>
           </div>
         </footer>

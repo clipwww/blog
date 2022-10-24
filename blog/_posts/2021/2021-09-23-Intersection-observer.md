@@ -4,6 +4,7 @@ summary: Intersection Observer API 可觀察目標元素 (target) 與其根層 (
 date: 2021-09-23
 tags: 
   - JavaScript
+  - Intersection Observer
 ---
 
 ## Intersection Observer API
