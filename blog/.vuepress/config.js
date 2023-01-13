@@ -174,4 +174,5 @@ module.exports = {
     md.set({ breaks: true, html: true, linkify: true });
     // md.use(require('markdown-it-task-lists'));
   },
+  patterns: ['**/*.md', '**/*.vue', '!backup/**', '!draft/**']
 }
