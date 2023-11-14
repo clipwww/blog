@@ -65,7 +65,7 @@ export default {
       return this.$page.key;
     },
     apiUrl() {
-      return `https://mechakucha-api.fly.dev/blog/post/${this.pageKey}/view-count`;
+      return `https://mechakucha-api-clipwww.vercel.app/blog/post/${this.pageKey}/view-count`;
     },
   },
   watch: {
