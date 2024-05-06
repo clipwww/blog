@@ -48,6 +48,8 @@ export default {
             { name: '集合啦！動物森友會' },
             { name: '十三機兵防衛圈' },
             { name: '異度神劍 3 & DLC' },
+            { name: '最後指令 Last Command' },
+            { name: 'LEGO® Star Wars™ : 天行者傳奇' },
           ]
         },
         {
@@ -64,7 +66,8 @@ export default {
             { name: '地球防衛軍 5' },
             { name: '空戰奇兵 7：未知天際' },
             { name: '最後指令 Last Command' },
-            { name: '星際大戰 絕地：組織殞落' }
+            { name: '星際大戰 絕地：組織殞落' },
+            { name: '幻獸帕魯' },
           ]
         }
       ],
