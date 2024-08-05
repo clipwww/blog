@@ -49,7 +49,7 @@ import {
   onBeforeUnmount,
   reactive,
   toRefs,
-} from "@vue/composition-api";
+} from "vue";
 import jsQR from "jsqr";
 
 export default defineComponent({

@@ -33,8 +33,6 @@
   addLinkToHead(href);
 }
 
-import VueCompositionAPI from '@vue/composition-api'
-
  export default ({
   Vue, // the version of Vue being used in the VuePress app
   options, // the options for the root Vue instance
@@ -42,7 +40,6 @@ import VueCompositionAPI from '@vue/composition-api'
   siteData, // site metadata
   isServer
 }) => {
-  Vue.use(VueCompositionAPI);
   // ...apply enhancements to the app
   if (!isServer) {
     registerCodeThemeCss(siteData.themeConfig.codeTheme);

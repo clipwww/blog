@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { computed, onUnmounted, ref, } from '@vue/composition-api'
+import { computed, onUnmounted, ref, } from 'vue'
 
 export default {
   props: {
