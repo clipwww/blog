@@ -50,6 +50,7 @@ export default {
             { name: '異度神劍 3 & DLC' },
             { name: '最後指令 Last Command' },
             { name: 'LEGO® Star Wars™ : 天行者傳奇' },
+            { name: '魔物獵人崛起 & DLC 破曉' },
           ]
         },
         {
