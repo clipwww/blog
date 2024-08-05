@@ -20,7 +20,7 @@ TapPay 的 Apple Pay on Web 不需要自己申請 Apple Pay 開發者帳號
 - https 的網域
   - 可以用 ngrok，但免費版的有 request 數限制
 - 登入 TapPay Portal > 支付管理 > Apple Pay On The Web
-  ![image](https://hackmd.io/_uploads/HyENQAatC.png)
+  ![image](https://imgur.com/TlaMIQw.png)
 
 網域驗證完獲得商家識別碼就準備就緒了
 
@@ -121,10 +121,11 @@ RequestApiGetPrimeResult 的內容可參考 [Get Prime Result](https://docs.tapp
   google & 問 gpt 後才搞清楚原來必須是透過使用者的操作後直接的呼叫 getPrime
   做了一些嘗試後得到結論是，中間不能參雜 http request
   也不能 click -> setupPaymentRequest -> getPrime
-  必須要是 click -> getPrime
+  必須要是 setupPaymentRequest -> click -> getPrime
   雖然不清楚 apple 怎麼判斷的
 
   且 apple pay, google pay 都有對使用者按下的付款按鈕有樣式規範
+  流程上不能用自己的付款按鈕就發起 Apple/Google Pay
   因此後來統一將 web 的支付流程調整為
 
   1. 使用者按下 「Pay」
@@ -206,11 +207,8 @@ session.onvalidatemerchant = async (event) => {
   const validationURL = event.validationURL
   const { data: ret } = await axios.post('/ap-session', {
     validationURL,
+    merchantIdentifier,
     displayName: '{顯示的商店名稱，可以中文}',
-  }, {
-    headers: {
-      'x-mid': '{merchantIdentifier}',
-    },
   })
 
   if (ret.code !== 0) {
@@ -235,8 +233,7 @@ const router = Router()
 
 router.post('/ap-session', async (req, res) => {
   try {
-    const { validationURL, displayName } = req.body
-    const merchantIdentifier = req.headers['x-mid'].toString()
+    const { validationURL, displayName, merchantIdentifier } = req.body
     const httpsAgent = new Agent({
       cert: readFileSync(resolve(__dirname, './sandbox/merchant_id_cert.pem')),
       key: readFileSync(resolve(__dirname, './sandbox/merchant_id.key')),
