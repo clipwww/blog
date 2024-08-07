@@ -1,6 +1,6 @@
 ---
 title: Apple Pay on Web
-summary: TapPay & 藍新金流
+summary: TapPay & 藍新金流的 Apple Pay 串接紀錄
 date: 2024-08-05
 tags: 
   - JavaScript
@@ -20,7 +20,8 @@ TapPay 的 Apple Pay on Web 不需要自己申請 Apple Pay 開發者帳號
 - https 的網域
   - 可以用 ngrok，但免費版的有 request 數限制
 - 登入 TapPay Portal > 支付管理 > Apple Pay On The Web
-  ![image](https://imgur.com/TlaMIQw.png)
+
+<img src="https://imgur.com/TlaMIQw.png"  data-action="zoom" />
 
 網域驗證完獲得商家識別碼就準備就緒了
 
@@ -85,11 +86,13 @@ window.TPDirect.paymentRequestApi.setupPaymentRequest({
     // shippingType: 'shipping'
   }
 }, (result: { browserSupportPaymentRequest: boolean; canMakePaymentWithActiveCard: boolean }) => {
+  /**
+   * browserSupportPaymentRequest: 代表瀏覽器支援 Payment Request API
+   * canMakePaymentWithActiveCard: 代表使用者有可以支付的卡片
+   */
   // ready for get prime 💪
 })
 ```
-- `browserSupportPaymentRequest` 代表瀏覽器支援 Payment Request API
-- `canMakePaymentWithActiveCard` 代表使用者有可以支付的卡片
 
 
 4. **Get Prime**
@@ -118,13 +121,13 @@ RequestApiGetPrimeResult 的內容可參考 [Get Prime Result](https://docs.tapp
   5. 呼叫 API 付款
 
   結果 step 4 就噴出了錯誤訊息「**Must create a new ApplePaySession from a user gesture handler**」
-  google & 問 gpt 後才搞清楚原來必須是透過使用者的操作後直接的呼叫 getPrime
+  google 爬文 & 問 gpt 後才知道原來必須是透過使用者的操作後直接的呼叫 getPrime
   做了一些嘗試後得到結論是，中間不能參雜 http request
   也不能 click -> setupPaymentRequest -> getPrime
   必須要是 setupPaymentRequest -> click -> getPrime
   雖然不清楚 apple 怎麼判斷的
 
-  且 apple pay, google pay 都有對使用者按下的付款按鈕有樣式規範
+  且 Apple/Google Pay 對使用者按下的付款按鈕都有樣式規範
   流程上不能用自己的付款按鈕就發起 Apple/Google Pay
   因此後來統一將 web 的支付流程調整為
 
@@ -155,19 +158,22 @@ RequestApiGetPrimeResult 的內容可參考 [Get Prime Result](https://docs.tapp
 可參考[藍新文件](https://cwww.newebpay.com/dw_files/Neweb_Applepayredme_20220622.pdf)
 
 我只負責拿到可以用的 merchantId, 憑證檔 & domain 後串接 🙈
+使用 typescript 的專案推薦安裝 `@types/applepayjs`
 
 ### 串接
 
 1. **檢查是否可使用 Apple Pay**
 ```ts
+/**
+ * window.ApplePaySession.canMakePaymentsWithActiveCard: Promise<boolean> 是否有可以支付的卡片
+ * window.ApplePaySession.canMakePayments: boolean 裝置是否支援 Apple Pay
+ */
 if (window.ApplePaySession 
   && await window.ApplePaySession.canMakePaymentsWithActiveCard('{merchantIdentifier}') 
   && window.ApplePaySession.canMakePayments()) {
   // just do it 
 }
 ```
-- `window.ApplePaySession.canMakePaymentsWithActiveCard` 是否有可以支付的卡片
-- `window.ApplePaySession.canMakePayments` 裝置是否支援 Apple Pay
 
 2. **建立 Apple Pay 付款資訊 & 驗證 Merchant**
 #### 建立 Apple Pay Session
@@ -235,8 +241,8 @@ router.post('/ap-session', async (req, res) => {
   try {
     const { validationURL, displayName, merchantIdentifier } = req.body
     const httpsAgent = new Agent({
-      cert: readFileSync(resolve(__dirname, './sandbox/merchant_id_cert.pem')),
-      key: readFileSync(resolve(__dirname, './sandbox/merchant_id.key')),
+      cert: readFileSync(resolve(__dirname, './sandbox/mid_cert.pem')),
+      key: readFileSync(resolve(__dirname, './sandbox/mid.key')),
     })
 
     const { data } = await axios.post(validationURL, {
@@ -262,21 +268,22 @@ Axios 需要設定 httpsAgent
 把從藍新那拿到的憑證檔案附上去
 > 藍新給了很多憑證檔案，認真說沒搞清楚是要帶哪一組，就一直 try 到可以過為止🥹
 
-驗證成功後原生 Apple Pay 視窗就會變成等待 Face/Touch ID
+3. **Get PaymentData**
+驗證成功後 Apple Pay 視窗就會變成等待 Face/Touch ID
 Face/Touch ID 驗證成功就會觸發 `onpaymentauthorized` 取得付款需要的 token
 如果使用者關閉 Apple Pay 則會觸發 `oncancel`
 ```ts
 session.onpaymentauthorized = (event) => {
   session.completePayment(window.ApplePaySession.STATUS_SUCCESS)
   // 呼叫 API 付款
+  // 藍新的幕後付款需要的 APPLEPAY 就是 event.payment.token.paymentData
+  // 需注意 paymentData 是一個 object，需要自己 stringify 過再交給藍新 API
 }
 
 session.oncancel = (event) => {
   console.log(event)
 }
 ```
-> 藍新的幕後付款需要的 `APPLEPAY` 就是 `event.payment.token.paymentData`
-> 需注意這是一個 `object`，需要自己 stringify 過再交給藍新 API
 
 ### 補充
 #### Apple Pay 流程上需要注意
@@ -285,8 +292,8 @@ session.oncancel = (event) => {
 但應該也是使用者 click -> new ApplePaySession -> session.begin()
 中間不得穿插其他 http request 或其他操作
 
-#### 啟用正式環境服務 
-正式環境用正式環境對應的 merchantIdentifier, 憑證 & Domain 即可
+#### 部署到正式環境
+用正式環境對應的 merchantIdentifier, 憑證 & Domain 即可
 沒有其他額外的審核了 🎊
 
 ## Apple Pay Button
@@ -303,3 +310,10 @@ Apple Pay 在 Line Webview、LIFF (LINE Front-end Framework) 內都可以順利�
 
 反觀 Google Pay 在 Webview 連 Pixel 都叫不出原生視窗🥹
 必須要讓使用者開啟外部瀏覽器才能進行付款
+
+## 參考資料
+- [TapPay 文件 - Apple Pay](https://docs.tappaysdk.com/apple-pay/zh/home.html#home)
+- [TapPay Web Example](https://github.com/TapPay/tappay-web-example)
+- [Apple Pay on Web 串接 | 院長的系統開發大小事](https://ianwu.tw/press/programming/third_party/integrate_apple_pay_on_web.html)
+- [Apple Pay on the Web 開發筆記 | SoarLin](https://soarlin.github.io/2018/03/10/apple-pay-on-the-web-%E9%96%8B%E7%99%BC%E7%AD%86%E8%A8%98/)
+- [Apple Pay 文件](https://developer.apple.com/documentation/passkit_apple_pay_and_wallet/apple_pay)
