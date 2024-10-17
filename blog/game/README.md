@@ -27,6 +27,7 @@ export default {
             { name: '薩爾達無雙：災厄啟示錄 & DLC' },
             { name: '薩爾達傳說：禦天之劍 HD' },
             { name: '薩爾達傳說：王國之淚' },
+            { name: '薩爾達傳說：智慧的再現' },
             { name: '超級瑪利歐：奧德賽' },
             { name: '瑪利歐賽車 8 DX豪華版' },
             { name: '超級瑪利歐：3D收藏輯' },
@@ -51,6 +52,7 @@ export default {
             { name: '最後指令 Last Command' },
             { name: 'LEGO® Star Wars™ : 天行者傳奇' },
             { name: '魔物獵人崛起 & DLC 破曉' },
+            { name: '賽馬娘 Pretty Derby 熱血喧鬧大感謝祭！' }
           ]
         },
         {
