@@ -4,9 +4,9 @@
 紀錄買了些什麼遊戲
 收藏遊戲的遊戲😆
 
-<div class="flex flex-wrap">
-  <div class="mr-4" v-for="item in items" :key="item.name">
-    <h3 class="border-solid border-0 border-b">{{ item.name }}</h3>
+<div class="flex flex-wrap gap-4">
+  <div v-for="item in items" :key="item.name">
+    <h3 class="border-solid border-0 border-b px-3">{{ item.name }}</h3>
     <ul>
       <li v-for="game in item.games" :key="game.name">{{ game.name }}</li>
     </ul>
@@ -53,6 +53,13 @@ export default {
             { name: 'LEGO® Star Wars™ : 天行者傳奇' },
             { name: '魔物獵人崛起 & DLC 破曉' },
             { name: '賽馬娘 Pretty Derby 熱血喧鬧大感謝祭！' }
+          ]
+        },
+        {
+          name: 'PlayStation®5 PRO',
+          games: [
+            { name: '空戰奇兵 7：未知天際' },
+            { name: '魔物獵人 荒野' },
           ]
         },
         {
