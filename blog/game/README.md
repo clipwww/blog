@@ -59,6 +59,7 @@ export default {
           name: 'PlayStation®5 PRO',
           games: [
             { name: '空戰奇兵 7：未知天際' },
+            { name: 'Grand Theft Auto V' },
             { name: '魔物獵人 荒野' },
           ]
         },
