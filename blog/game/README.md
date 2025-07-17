@@ -1,5 +1,5 @@
 
-# 遊戲
+# 🎮 遊戲
 
 紀錄買了些什麼遊戲
 收藏遊戲的遊戲😆
@@ -56,11 +56,21 @@ export default {
           ]
         },
         {
+          name: 'Nintendo Switch 2',
+          games: [
+            { name: '瑪利歐賽車世界' },
+            { name: 'Nintendo Switch 2秘密展' },
+            { name: '薩爾達傳說：王國之淚 NS2 Edition 升級通行證' },
+          ]
+        },
+        {
           name: 'PlayStation®5 PRO',
           games: [
             { name: '空戰奇兵 7：未知天際' },
             { name: 'Grand Theft Auto V' },
             { name: '魔物獵人 荒野' },
+            { name: '最後生還者 第I章' },
+            { name: '非常普通的鹿 DEEEER Simulator'}
           ]
         },
         {
