@@ -4,18 +4,9 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Fri, 18 Jul 2025 10:10:40 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 30 Jul 2025 10:39:05 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
-        <item>
-            <title><![CDATA[第一篇文章]]></title>
-            <link>https://clipwww.github.io/blog/2021/08/17/first/</link>
-            <guid>https://clipwww.github.io/blog/2021/08/17/first/</guid>
-            <pubDate>Tue, 17 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[這是第一篇，毫無意義的嘗試語法而已。]]></description>
-            <enclosure url="https://clipwww.github.io/blog/@/images/pic.png">
-            </enclosure>
-        </item>
         <item>
             <title><![CDATA[用 Google 試算表當簡易資料庫]]></title>
             <link>https://clipwww.github.io/blog/2021/08/25/google-sheets/</link>
@@ -26,21 +17,12 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[Intersection Observer 筆記]]></title>
-            <link>https://clipwww.github.io/blog/2021/09/23/intersection-observer/</link>
-            <guid>https://clipwww.github.io/blog/2021/09/23/intersection-observer/</guid>
-            <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入/離開設定的條件時就呼叫 callback]]></description>
-            <enclosure url="https://picsum.photos/64">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[position:sticky;]]></title>
-            <link>https://clipwww.github.io/blog/2021/09/07/position-sticky/</link>
-            <guid>https://clipwww.github.io/blog/2021/09/07/position-sticky/</guid>
-            <pubDate>Tue, 07 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[工作上用到「黏性定位」，紀錄一下]]></description>
-            <enclosure url="https://clipwww.github.io/blog/@/images/w3c-box-model.png">
+            <title><![CDATA[第一篇文章]]></title>
+            <link>https://clipwww.github.io/blog/2021/08/17/first/</link>
+            <guid>https://clipwww.github.io/blog/2021/08/17/first/</guid>
+            <pubDate>Tue, 17 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[這是第一篇，毫無意義的嘗試語法而已。]]></description>
+            <enclosure url="https://clipwww.github.io/blog/@/images/pic.png">
             </enclosure>
         </item>
         <item>
@@ -53,20 +35,29 @@
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[position:sticky;]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/07/position-sticky/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/07/position-sticky/</guid>
+            <pubDate>Tue, 07 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[工作上用到「黏性定位」，紀錄一下]]></description>
+            <enclosure url="https://clipwww.github.io/blog/@/images/w3c-box-model.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Intersection Observer 筆記]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/23/intersection-observer/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/23/intersection-observer/</guid>
+            <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Intersection Observer API 可觀察目標元素 (target) 與其根層 (root) 或瀏覽器 (viewport) 的交互狀態，當目標元素進入/離開設定的條件時就呼叫 callback]]></description>
+            <enclosure url="https://picsum.photos/64">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[外間距折疊 (Collapsing margins) 筆記]]></title>
             <link>https://clipwww.github.io/blog/2021/09/24/margin-top/</link>
             <guid>https://clipwww.github.io/blog/2021/09/24/margin-top/</guid>
             <pubDate>Fri, 24 Sep 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[有時候會發生 margin-top 失效，以為遇到什麼 bug]]></description>
-        </item>
-        <item>
-            <title><![CDATA[Intersection Observer 踩雷紀錄]]></title>
-            <link>https://clipwww.github.io/blog/2022/10/24/intersection-observer-boundaries-issue/</link>
-            <guid>https://clipwww.github.io/blog/2022/10/24/intersection-observer-boundaries-issue/</guid>
-            <pubDate>Mon, 24 Oct 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[當 Intersection Observer root element 有 padding 時，在不同瀏覽器上觀察範圍會有預期外的行為]]></description>
-            <enclosure url="https://i.imgur.com/V9bH6Pb.png">
-            </enclosure>
         </item>
         <item>
             <title><![CDATA[用 CSS Border 做三角形]]></title>
@@ -75,6 +66,15 @@
             <pubDate>Fri, 15 Oct 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[之前只會做等腰三角，長知識記錄一下]]></description>
             <enclosure url="https://i.imgur.com/wWHk4tY.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Intersection Observer 踩雷紀錄]]></title>
+            <link>https://clipwww.github.io/blog/2022/10/24/intersection-observer-boundaries-issue/</link>
+            <guid>https://clipwww.github.io/blog/2022/10/24/intersection-observer-boundaries-issue/</guid>
+            <pubDate>Mon, 24 Oct 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[當 Intersection Observer root element 有 padding 時，在不同瀏覽器上觀察範圍會有預期外的行為]]></description>
+            <enclosure url="https://i.imgur.com/V9bH6Pb.png">
             </enclosure>
         </item>
         <item>
@@ -96,21 +96,21 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[Apple Pay on Web]]></title>
-            <link>https://clipwww.github.io/blog/2024/08/05/apple-pay-on-web/</link>
-            <guid>https://clipwww.github.io/blog/2024/08/05/apple-pay-on-web/</guid>
-            <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[TapPay & 藍新金流的 Apple Pay 串接紀錄]]></description>
-            <enclosure url="https://imgur.com/TlaMIQw.png">
-            </enclosure>
-        </item>
-        <item>
             <title><![CDATA[Google Pay on Web]]></title>
             <link>https://clipwww.github.io/blog/2024/08/06/google-pay-on-web/</link>
             <guid>https://clipwww.github.io/blog/2024/08/06/google-pay-on-web/</guid>
             <pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[TapPay & 藍新金流的 Google Pay 串接紀錄]]></description>
             <enclosure url="https://imgur.com/KKJaC1b.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Apple Pay on Web]]></title>
+            <link>https://clipwww.github.io/blog/2024/08/05/apple-pay-on-web/</link>
+            <guid>https://clipwww.github.io/blog/2024/08/05/apple-pay-on-web/</guid>
+            <pubDate>Mon, 05 Aug 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[TapPay & 藍新金流的 Apple Pay 串接紀錄]]></description>
+            <enclosure url="https://imgur.com/TlaMIQw.png">
             </enclosure>
         </item>
     </channel>
