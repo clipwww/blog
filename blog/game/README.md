@@ -61,6 +61,7 @@ export default {
             { name: '瑪利歐賽車世界' },
             { name: 'Nintendo Switch 2秘密展' },
             { name: '薩爾達傳說：王國之淚 NS2 Edition 升級通行證' },
+            { name: '咚奇剛 蕉力全開' }
           ]
         },
         {
