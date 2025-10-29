@@ -31,6 +31,7 @@ export default {
             { name: '超級瑪利歐：奧德賽' },
             { name: '瑪利歐賽車 8 DX豪華版' },
             { name: '超級瑪利歐：3D收藏輯' },
+            { name: '超級瑪利歐兄弟：驚奇' },
             { name: '路易吉鬼屋 3' },
             { name: 'Splatoon 2 & DLC' },
             { name: '斯普拉頓 3 ( Splatoon 3 ) & DLC' },
@@ -46,6 +47,7 @@ export default {
             { name: '寶可夢：晶燦鑽石' },
             { name: '寶可夢傳說：阿爾宙斯' },
             { name: '寶可夢：紫 & DLC' },
+            { name: '寶可夢傳說 Z-A' },
             { name: '集合啦！動物森友會' },
             { name: '十三機兵防衛圈' },
             { name: '異度神劍 3 & DLC' },
@@ -61,7 +63,8 @@ export default {
             { name: '瑪利歐賽車世界' },
             { name: 'Nintendo Switch 2秘密展' },
             { name: '薩爾達傳說：王國之淚 NS2 Edition 升級通行證' },
-            { name: '咚奇剛 蕉力全開' }
+            { name: '咚奇剛 蕉力全開 & DLC' },
+            { name: '寶可夢傳說 Z-A NS2 Edition 升級通行證' }
           ]
         },
         {
@@ -71,7 +74,8 @@ export default {
             { name: 'Grand Theft Auto V' },
             { name: '魔物獵人 荒野' },
             { name: '最後生還者 第I章' },
-            { name: '非常普通的鹿 DEEEER Simulator'}
+            { name: '非常普通的鹿 DEEEER Simulator'},
+            { name: 'Viewfinder' }
           ]
         },
         {
