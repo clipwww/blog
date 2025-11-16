@@ -4,7 +4,7 @@
         <title>David&apos;s Blog</title>
         <link>https://clipwww.github.io/blog/</link>
         <description>なんですか、これ？</description>
-        <lastBuildDate>Wed, 29 Oct 2025 08:51:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 16 Nov 2025 16:18:06 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
         <item>
@@ -14,24 +14,6 @@
             <pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[紀錄一下用 Google 試算表當成資料庫並且變成API來使用這件事]]></description>
             <enclosure url="https://i.imgur.com/E6yOfKa.png">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[第一篇文章]]></title>
-            <link>https://clipwww.github.io/blog/2021/08/17/first/</link>
-            <guid>https://clipwww.github.io/blog/2021/08/17/first/</guid>
-            <pubDate>Tue, 17 Aug 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[這是第一篇，毫無意義的嘗試語法而已。]]></description>
-            <enclosure url="https://clipwww.github.io/blog/@/images/pic.png">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[用 utterances 簡單快速的幫 blog 加上留言功能]]></title>
-            <link>https://clipwww.github.io/blog/2021/09/16/utterances/</link>
-            <guid>https://clipwww.github.io/blog/2021/09/16/utterances/</guid>
-            <pubDate>Thu, 16 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[utterance 是一個基於 Github issues 構建的輕量級評論小工具。]]></description>
-            <enclosure url="https://i.imgur.com/krV4Jc8.png">
             </enclosure>
         </item>
         <item>
@@ -51,21 +33,30 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[position:sticky;]]></title>
-            <link>https://clipwww.github.io/blog/2021/09/07/position-sticky/</link>
-            <guid>https://clipwww.github.io/blog/2021/09/07/position-sticky/</guid>
-            <pubDate>Tue, 07 Sep 2021 00:00:00 GMT</pubDate>
-            <description><![CDATA[工作上用到「黏性定位」，紀錄一下]]></description>
-            <enclosure url="https://clipwww.github.io/blog/@/images/w3c-box-model.png">
-            </enclosure>
-        </item>
-        <item>
             <title><![CDATA[Intersection Observer 踩雷紀錄]]></title>
             <link>https://clipwww.github.io/blog/2022/10/24/intersection-observer-boundaries-issue/</link>
             <guid>https://clipwww.github.io/blog/2022/10/24/intersection-observer-boundaries-issue/</guid>
             <pubDate>Mon, 24 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[當 Intersection Observer root element 有 padding 時，在不同瀏覽器上觀察範圍會有預期外的行為]]></description>
             <enclosure url="https://i.imgur.com/V9bH6Pb.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[關於怎麼用 SVG Icon 的研究紀錄]]></title>
+            <link>https://clipwww.github.io/blog/2023/01/12/icon/</link>
+            <guid>https://clipwww.github.io/blog/2023/01/12/icon/</guid>
+            <pubDate>Thu, 12 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[想要優雅的使用 SVG Icon 🥹]]></description>
+            <enclosure url="https://i.imgur.com/tsoJ3vH.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[用 utterances 簡單快速的幫 blog 加上留言功能]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/16/utterances/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/16/utterances/</guid>
+            <pubDate>Thu, 16 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[utterance 是一個基於 Github issues 構建的輕量級評論小工具。]]></description>
+            <enclosure url="https://i.imgur.com/krV4Jc8.png">
             </enclosure>
         </item>
         <item>
@@ -78,12 +69,30 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[關於怎麼用 SVG Icon 的研究紀錄]]></title>
-            <link>https://clipwww.github.io/blog/2023/01/12/icon/</link>
-            <guid>https://clipwww.github.io/blog/2023/01/12/icon/</guid>
-            <pubDate>Thu, 12 Jan 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[想要優雅的使用 SVG Icon 🥹]]></description>
-            <enclosure url="https://i.imgur.com/tsoJ3vH.png">
+            <title><![CDATA[position:sticky;]]></title>
+            <link>https://clipwww.github.io/blog/2021/09/07/position-sticky/</link>
+            <guid>https://clipwww.github.io/blog/2021/09/07/position-sticky/</guid>
+            <pubDate>Tue, 07 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[工作上用到「黏性定位」，紀錄一下]]></description>
+            <enclosure url="https://clipwww.github.io/blog/@/images/w3c-box-model.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[第一篇文章]]></title>
+            <link>https://clipwww.github.io/blog/2021/08/17/first/</link>
+            <guid>https://clipwww.github.io/blog/2021/08/17/first/</guid>
+            <pubDate>Tue, 17 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[這是第一篇，毫無意義的嘗試語法而已。]]></description>
+            <enclosure url="https://clipwww.github.io/blog/@/images/pic.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[11/3 ~ 11/7 大阪(+奈良)紀錄]]></title>
+            <link>https://clipwww.github.io/blog/2023/11/07/osaka/</link>
+            <guid>https://clipwww.github.io/blog/2023/11/07/osaka/</guid>
+            <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[睽違 5 年的日本，超級わくわく！]]></description>
+            <enclosure url="https://i.imgur.com/00INAiR.png">
             </enclosure>
         </item>
         <item>
@@ -102,15 +111,6 @@
             <pubDate>Tue, 06 Aug 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[TapPay & 藍新金流的 Google Pay 串接紀錄]]></description>
             <enclosure url="https://imgur.com/KKJaC1b.png">
-            </enclosure>
-        </item>
-        <item>
-            <title><![CDATA[11/3 ~ 11/7 大阪(+奈良)紀錄]]></title>
-            <link>https://clipwww.github.io/blog/2023/11/07/osaka/</link>
-            <guid>https://clipwww.github.io/blog/2023/11/07/osaka/</guid>
-            <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[睽違 5 年的日本，超級わくわく！]]></description>
-            <enclosure url="https://i.imgur.com/00INAiR.png">
             </enclosure>
         </item>
     </channel>
