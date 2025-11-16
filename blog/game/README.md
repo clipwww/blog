@@ -47,14 +47,14 @@ export default {
             { name: '寶可夢：晶燦鑽石' },
             { name: '寶可夢傳說：阿爾宙斯' },
             { name: '寶可夢：紫 & DLC' },
-            { name: '寶可夢傳說 Z-A' },
+            { name: '寶可夢傳說 Z-A & DLC' },
             { name: '集合啦！動物森友會' },
             { name: '十三機兵防衛圈' },
             { name: '異度神劍 3 & DLC' },
             { name: '最後指令 Last Command' },
             { name: 'LEGO® Star Wars™ : 天行者傳奇' },
             { name: '魔物獵人崛起 & DLC 破曉' },
-            { name: '賽馬娘 Pretty Derby 熱血喧鬧大感謝祭！' }
+            { name: '賽馬娘 Pretty Derby 熱血喧鬧大感謝祭！ & DLC' }
           ]
         },
         {
@@ -64,7 +64,8 @@ export default {
             { name: 'Nintendo Switch 2秘密展' },
             { name: '薩爾達傳說：王國之淚 NS2 Edition 升級通行證' },
             { name: '咚奇剛 蕉力全開 & DLC' },
-            { name: '寶可夢傳說 Z-A NS2 Edition 升級通行證' }
+            { name: '寶可夢傳說 Z-A NS2 Edition 升級通行證' },
+            { name: '薩爾達無雙：封印戰記' },
           ]
         },
         {
