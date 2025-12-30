@@ -9,7 +9,7 @@
   <div class="my-1 text-sm">
     <a href="mailto:clipwww@gmail.com">clipwww@gmail.com</a>
   </div>
-  <div class="my-5">有 {{ new Date().getFullYear() - 2017 }} 年以上的前端開發經驗，擅長使用的前端框架是 <span class="text-vue font-bold">Vue.js</span>。</div>
+  <div class="my-5">具備 {{ new Date().getFullYear() - 2016 }} 年以上網站與 Web 應用程式開發經驗的前端工程師，專精於 <span class="text-vue font-bold">Vue.js</span> 及其生態系，並具備基礎後端開發能力。</div>
   <div>
     <a class="text-lg mx-3 no-underline" href="https://github.com/clipwww" target="_blank">GitHub<OutboundLink /></a>
     <a class="text-lg mx-3 no-underline" href="https://www.cakeresume.com/me/er-ting-jian" target="_blank">CakeResume<OutboundLink /></a>
