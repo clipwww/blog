@@ -1,13 +1,15 @@
 {
   "name": "blog",
   "version": "1.0.0",
+  "type": "module",
   "description": "just for fun",
   "scripts": {
-    "dev": "vuepress dev blog",
-    "build": "vuepress build blog"
+    "dev": "vitepress dev blog",
+    "build": "vitepress build blog",
+    "preview": "vitepress preview blog"
   },
   "keywords": [
-    "vuepress"
+    "vitepress"
   ],
   "authors": {
     "name": "clipwww",
@@ -16,34 +18,14 @@
   "repository": "https://github.com/clipwww/blog",
   "license": "ISC",
   "devDependencies": {
-    "@kawarimidoll/vuepress-plugin-tailwind": "^2.0.0",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@types/lodash": "^4.14.172",
-    "@vssue/api-github-v3": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.8",
-    "@vue/component-compiler-utils": "^3.2.2",
-    "@vuepress/plugin-back-to-top": "^1.8.2",
-    "@vuepress/plugin-google-analytics": "^1.8.2",
-    "@vuepress/plugin-nprogress": "^1.8.2",
-    "@vuepress/plugin-search": "^1.8.2",
-    "@vuepress/shared-utils": "^1.8.2",
-    "@vuepress/theme-blog": "^2.3.3",
+    "gray-matter": "^4.0.3",
     "markdown-it-task-lists": "^2.1.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
-    "vuepress": "^1.8.2",
-    "vuepress-plugin-medium-zoom": "^1.1.9",
-    "vuepress-plugin-minimal-analytics": "^0.1.4",
-    "vuepress-plugin-reading-progress": "^1.0.10",
-    "vuepress-plugin-social-share": "^1.0.0"
+    "unocss": "^66.5.0",
+    "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@vueuse/core": "^6.5.3",
-    "dayjs": "^1.10.6",
-    "dotenv": "^10.0.0",
-    "jsqr": "^1.4.0",
-    "lodash": "^4.17.21",
-    "vue": "^2.7.16",
-    "vue-server-renderer": "^2.7.16",
-    "zoom-vanilla.js": "^2.0.6"
+    "dayjs": "^1.11.13",
+    "medium-zoom": "^1.1.0",
+    "vue": "^3.5.18"
   }
 }

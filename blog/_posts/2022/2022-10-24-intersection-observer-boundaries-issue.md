@@ -7,7 +7,7 @@ tags:
   - Intersection Observer
 ---
 
-[Intersection Observer 筆記](../2021/2021-09-23-Intersection-observer.md)
+[Intersection Observer 筆記](/2021/09/23/intersection-observer.md)
 
 ## 遇到的問題與原因
 

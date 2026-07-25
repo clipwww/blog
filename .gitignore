@@ -1,6 +1,11 @@
+.DS_Store
+
 node_modules
 .temp
 .cache
 dist
+blog/.vitepress/cache/
+blog/.vitepress/dist/
 
 .env
+.omc

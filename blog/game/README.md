@@ -1,16 +1,27 @@
+---
+aside: false
+outline: false
+pageClass: game-page
+---
 
 # 🎮 遊戲
 
 紀錄買了些什麼遊戲
 收藏遊戲的遊戲😆
 
-<div class="flex flex-wrap gap-4">
-  <div v-for="item in items" :key="item.name">
-    <h3 class="border-solid border-0 border-b px-3">{{ item.name }}</h3>
-    <ul>
-      <li v-for="game in item.games" :key="game.name">{{ game.name }}</li>
+<div class="game-shelf">
+  <section v-for="item in items" :key="item.name" class="game-shelf__column">
+    <div class="game-shelf__heading">
+      <img class="game-shelf__logo-img" :class="`game-shelf__logo-img--${item.id}`" :src="$withBase(item.logoSrc)" :alt="item.logoAlt" />
+      <div class="game-shelf__title-wrap">
+        <h3 class="game-shelf__title">{{ item.name }}</h3>
+        <span class="game-shelf__count">{{ item.games.length }} 款</span>
+      </div>
+    </div>
+    <ul class="game-shelf__games">
+      <li v-for="game in item.games" :key="game.name" class="game-shelf__game">{{ game.name }}</li>
     </ul>
-  </div>
+  </section>
 </div>
 
 
@@ -20,7 +31,10 @@ export default {
     return {
       items: [
         {
+          id: 'switch',
           name: 'Nintendo Switch',
+          logoAlt: 'Nintendo Switch logo',
+          logoSrc: '/logos/nintendo-switch.svg',
           games: [
             { name: '薩爾達傳說：曠野之息 & DLC' },
             { name: '薩爾達傳說：織夢島' },
@@ -58,7 +72,10 @@ export default {
           ]
         },
         {
+          id: 'switch-2',
           name: 'Nintendo Switch 2',
+          logoAlt: 'Nintendo Switch 2 logo',
+          logoSrc: '/logos/nintendo-switch-2.svg',
           games: [
             { name: '瑪利歐賽車世界' },
             { name: 'Nintendo Switch 2秘密展' },
@@ -66,12 +83,18 @@ export default {
             { name: '咚奇剛 蕉力全開 & DLC' },
             { name: '寶可夢傳說 Z-A NS2 Edition 升級通行證' },
             { name: '薩爾達無雙：封印戰記' },
+            { name: '星際火狐 StarFox' },
+            { name: '斯普拉遁：塗擊隊' },
           ]
         },
         {
+          id: 'ps5',
           name: 'PlayStation®5 PRO',
+          logoAlt: 'PlayStation 5 logo',
+          logoSrc: '/logos/playstation5.svg',
           games: [
             { name: '空戰奇兵 7：未知天際' },
+            { name: '數碼寶貝 Next Order' },
             { name: 'Grand Theft Auto V' },
             { name: '魔物獵人 荒野' },
             { name: '最後生還者 第I章' },
@@ -80,7 +103,10 @@ export default {
           ]
         },
         {
+          id: 'steam',
           name: 'Steam',
+          logoAlt: 'Steam logo',
+          logoSrc: '/logos/steam.svg',
           games: [
             { name: 'Half-Life' },
             { name: 'Half-Life 2' },
@@ -102,3 +128,139 @@ export default {
   }  
 }
 </script>
+
+<style scoped>
+.game-shelf {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(18rem, 22rem);
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding: 0.5rem 0.15rem 0.9rem;
+}
+
+.game-shelf::-webkit-scrollbar {
+  height: 10px;
+}
+
+.game-shelf::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vp-c-brand-1) 65%, transparent);
+}
+
+.game-shelf__column {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 32rem;
+  max-height: min(72vh, 38rem);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 18%, var(--vp-c-divider));
+  border-radius: 22px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--vp-c-bg-soft) 94%, white 6%), var(--vp-c-bg));
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+  scroll-snap-align: start;
+}
+
+.game-shelf__heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.9rem 1rem 0.85rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.game-shelf__logo-img {
+  display: block;
+  width: 3.1rem;
+  height: 3.1rem;
+  padding: 0.35rem;
+  border-radius: 8px;
+  background: #fff;
+  object-fit: contain;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.08);
+}
+
+.game-shelf__logo-img--switch,
+.game-shelf__logo-img--switch-2 {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+.game-shelf__logo-img--ps5 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.game-shelf__logo-img--steam {
+  width: 3rem;
+  height: 3rem;
+}
+
+.game-shelf__title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.game-shelf__title {
+  margin: 0;
+  color: var(--vp-c-text-1);
+  font-size: 1.15rem;
+}
+
+.game-shelf__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.25rem;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vp-c-brand-1) 14%, var(--vp-c-bg-soft));
+  color: var(--vp-c-brand-1);
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.game-shelf__games {
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+}
+
+.game-shelf__games::-webkit-scrollbar {
+  width: 8px;
+}
+
+.game-shelf__games::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--vp-c-text-3) 70%, transparent);
+}
+
+.game-shelf__game {
+  padding: 0.8rem 1rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.55;
+}
+
+.game-shelf__game + .game-shelf__game {
+  border-top: 1px dashed var(--vp-c-divider);
+}
+
+@media (max-width: 640px) {
+  .game-shelf {
+    grid-auto-columns: minmax(82vw, 88vw);
+  }
+
+  .game-shelf__column {
+    min-height: 28rem;
+    max-height: min(66vh, 32rem);
+  }
+}
+</style>

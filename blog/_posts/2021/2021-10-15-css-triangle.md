@@ -17,14 +17,6 @@ border-width: 上 右 下 左;
 border 的四個方向設定不同顏色可以取得
 
 <div class="sample"></div>
-<style >
-.sample {
-  display: inline-block;
-  border-style: solid;
-  border-color: red orange yellow green;
-  border-width: 50px 50px 50px 50px;
-}
-</style>
 
 ```css
 .sample {
@@ -42,14 +34,6 @@ border 的四個方向設定不同顏色可以取得
 border-bottom-width = 三角形的高
 
 <div class="sample2"></div>
-<style >
-  .sample2 {
-  display: inline-block;
-  border-style: solid;
-  border-color: transparent transparent orange transparent;
-  border-width: 0 50px 100px 50px;
-}
-</style>
 
 ```css
 .sample2 {
@@ -65,14 +49,6 @@ border-bottom-width = 三角形的高
 border-left-width + border-right-width  = 三角形的底邊長
 
 <div class="sample3"></div>
-<style >
-  .sample3 {
-  display: inline-block;
-  border-style: solid;
-  border-color: transparent transparent red transparent;
-  border-width: 0 40px 100px 120px;
-}
-</style>
 
 ```css
 .sample3 {
@@ -86,14 +62,6 @@ border-left-width + border-right-width  = 三角形的底邊長
 <div class="mt-10"></div>
 
 <div class="sample4"></div>
-<style >
-  .sample4 {
-  display: inline-block;
-  border-style: solid;
-  border-color: transparent transparent blue transparent;
-  border-width: 0 20px 100px 20px;
-}
-</style>
 
 ```css
 .sample4 {
@@ -114,15 +82,6 @@ border-bottom-width = 三角形的高
 width + border-left-width + border-right-width  = 下底邊長
 
 <div class="sample5"></div>
-<style >
-.sample5 {
-  display: inline-block;
-  border-style: solid;
-  border-color: transparent transparent purple transparent;
-  border-width: 0 50px 100px 50px;
-  width: 40px;
-}
-</style>
 
 ```css
 .sample5 {
@@ -142,3 +101,41 @@ width + border-left-width + border-right-width  = 下底邊長
 2. 轉盤的每一片區塊的三角形，透過角度跟高就可以計算獲得底邊長
 
 ![](https://i.imgur.com/wWHk4tY.png)
+
+<style scoped>
+.sample {
+  display: inline-block;
+  border-style: solid;
+  border-color: red orange yellow green;
+  border-width: 50px;
+}
+
+.sample2 {
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent transparent orange transparent;
+  border-width: 0 50px 100px;
+}
+
+.sample3 {
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
+  border-width: 0 40px 100px 120px;
+}
+
+.sample4 {
+  display: inline-block;
+  border-style: solid;
+  border-color: transparent transparent blue transparent;
+  border-width: 0 20px 100px;
+}
+
+.sample5 {
+  display: inline-block;
+  width: 40px;
+  border-style: solid;
+  border-color: transparent transparent purple transparent;
+  border-width: 0 50px 100px;
+}
+</style>

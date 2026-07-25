@@ -84,12 +84,13 @@ sticky element 是會黏在祖先的 `Content` 上
 
 如果可滾動的祖先有 `padding-top: 30px;` 又想要黏在頂部就得設定 `top: -30px;`
 
-<p class="codepen" data-height="500" data-theme-id="dark" data-default-tab="css,result" data-slug-hash="yLXVqmK" data-user="clipwww" style="height: 500px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/clipwww/pen/yLXVqmK">
-  position: sticky;</a> by Jian, Er-Ting (<a href="https://codepen.io/clipwww">@clipwww</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<CodePenEmbed
+  title="position: sticky;"
+  user="clipwww"
+  slug-hash="yLXVqmK"
+  default-tab="css,result"
+  :height="500"
+/>
 
 或是 [Position sticky with parent padding-top](https://stackoverflow.com/questions/51149440/position-sticky-with-parent-padding-top)
 
