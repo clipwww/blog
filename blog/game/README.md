@@ -94,6 +94,7 @@ export default {
           logoSrc: '/logos/playstation5.svg',
           games: [
             { name: '空戰奇兵 7：未知天際' },
+            { name: '空戰奇兵 8：希孚之翼'},
             { name: '數碼寶貝 Next Order' },
             { name: 'Grand Theft Auto V' },
             { name: '魔物獵人 荒野' },
@@ -120,7 +121,7 @@ export default {
             { name: '空戰奇兵 7：未知天際' },
             { name: '最後指令 Last Command' },
             { name: '星際大戰 絕地：組織殞落' },
-            { name: '幻獸帕魯' },
+            { name: '幻獸帕魯' }
           ]
         }
       ],
